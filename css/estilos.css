@@ -1,0 +1,227 @@
+/* #fdb984 #C37857;*/
+/*#a5480b*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Work Sans', sans-serif; }
+
+.header {
+  background-color: #fdb984; }
+  .header .header__contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px; }
+    .header .header__contenedor .logo {
+      width: 100px; }
+    .header .header__contenedor .nav__lista {
+      display: flex; }
+      .header .header__contenedor .nav__lista .nav__item {
+        list-style: none;
+        transition: transform 0.5s; }
+        .header .header__contenedor .nav__lista .nav__item:hover {
+          transform: scale(1.3, 1.3); }
+        .header .header__contenedor .nav__lista .nav__item__a {
+          text-decoration: none;
+          margin: 8px;
+          font-size: 1.3rem;
+          color: #ffffff; }
+
+.inicio {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*background-image: url(../imagenes/72.jpg);
+    background-size: 100%;*/
+  background-color: #fdb984;
+  margin-bottom: 2rem; }
+  .inicio h1 {
+    font-size: 5rem;
+    font-family: 'Parisienne', cursive;
+    color: #ffffff; }
+
+body {
+  background-color: #ffffff;
+  width: 100%; }
+
+.productosDestacados {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+  margin-bottom: 4rem; }
+  .productosDestacados .productoDestacado {
+    width: 300px;
+    position: relative; }
+    .productosDestacados .productoDestacado .productoDestacado__ContenedorImg__img {
+      width: 100%;
+      border: solid 0px #853a00;
+      border-radius: 25px; }
+    .productosDestacados .productoDestacado__informacion {
+      position: absolute;
+      text-decoration: none;
+      color: #a5480b;
+      bottom: 4px;
+      border: solid 3px #ffffff;
+      background-color: #ffffff;
+      left: 95px;
+      width: 115px;
+      height: 56px;
+      border-radius: 100px 100px 0 0; }
+      .productosDestacados .productoDestacado__informacion h2 {
+        position: absolute;
+        bottom: 6px;
+        left: 21px; }
+
+.contenedorFondo {
+  background-image: url(../imagenes/c1.jpg);
+  background-size: 100%; }
+  .contenedorFondo .contenedorFondo_color {
+    background: #080707b8; }
+
+.sobreNosotros {
+  display: flex;
+  justify-content: center;
+  max-width: 1300px;
+  min-height: 600px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  padding-top: 40px;
+  /*background-color: $colorHeaderFooter;*/
+  /*
+    .SobreNosotros__img{
+        position: relative;
+
+        div{
+            width: 300px;
+            position: absolute;
+
+            & img{
+                width: 100%;
+            }
+        }
+
+        .SobreNosotros__img__contenedor1{
+            top: 52px;
+            left: 210px;
+            z-index: 1;
+        }
+
+        .SobreNosotros__img__contenedor2{
+            top: 222px;
+            left: 38px;
+            z-index: 3;
+        }
+
+        .SobreNosotros__img__contenedor3{
+            top: 343px;
+            left: 267px;
+            z-index: 2;
+        }
+    }*/ }
+  .sobreNosotros .informacion {
+    flex-basis: 60%;
+    color: white;
+    position: relative; }
+    .sobreNosotros .informacion__titulo {
+      font-family: 'Parisienne';
+      font-size: 4rem;
+      text-align: center; }
+    .sobreNosotros .informacion__parrafo {
+      text-align: center;
+      font-size: 2rem;
+      margin-left: 28%;
+      margin-bottom: 3rem; }
+    .sobreNosotros .informacion__parrafo2 {
+      text-align: center;
+      font-size: 1.5rem;
+      margin-bottom: 3rem; }
+    .sobreNosotros .informacion p:nth-child(5) {
+      margin-bottom: 3rem; }
+    .sobreNosotros .informacion .contenedorBoton {
+      text-align: center;
+      height: 93px; }
+      .sobreNosotros .informacion .contenedorBoton .botonComprar {
+        position: absolute;
+        text-decoration: none;
+        border: solid 3px #ffffff;
+        background-color: #ffffff;
+        width: 157px;
+        height: 76px;
+        bottom: 0px;
+        left: 317px;
+        border-radius: 100px 100px 0 0; }
+        .sobreNosotros .informacion .contenedorBoton .botonComprar p {
+          position: absolute;
+          text-align: center;
+          font-size: 1.3rem;
+          top: 36px;
+          left: 14px;
+          color: #a74d11;
+          font-weight: 600; }
+
+.masProductos {
+  margin: 0 3%;
+  margin-bottom: 6rem; }
+  .masProductos div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .masProductos div .uno {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative; }
+      .masProductos div .uno .imagen {
+        padding: 27px;
+        padding-bottom: 3px; }
+        .masProductos div .uno .imagen img {
+          border: solid 0px #853a00;
+          border-radius: 25px; }
+      .masProductos div .uno .titulo {
+        margin-bottom: 1.5rem;
+        color: #ffffff; }
+        .masProductos div .uno .titulo ::after {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 30%;
+          bottom: 0;
+          left: 0;
+          background-color: #C46352;
+          border-radius: 10px;
+          z-index: -1; }
+    .masProductos div img {
+      width: 280px; }
+
+footer {
+  background-color: #fdb984; }
+  footer .footer__contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 2rem 0; }
+    footer .footer__contenedor .logo {
+      width: 100px; }
+    footer .footer__contenedor p {
+      color: white;
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+      padding-left: 3%; }
+    footer .footer__contenedor p:nth-child(1) {
+      font-size: 2rem;
+      padding-left: 0%; }
+    footer .footer__contenedor .contactos {
+      width: 381px; }
+    footer .footer__contenedor .redes {
+      width: 253px; }
+      footer .footer__contenedor .redes a {
+        color: white;
+        text-decoration: none;
+        padding-left: 3%;
+        font-size: 4rem; }

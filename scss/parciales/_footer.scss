@@ -1,0 +1,44 @@
+footer{
+    background-color: $colorHeaderFooter;
+    .footer__contenedor{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 2rem 0;
+        
+        .logo{
+            width: 100px;
+        }
+
+        p{
+            color: white;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+            padding-left: 3%;
+        }
+
+        p:nth-child(1){
+            font-size: 2rem;
+            padding-left: 0%;
+        }
+
+        .contactos{
+            width: 381px;
+        }
+
+        .redes{
+            width: 253px;
+            a{
+                color: white;
+                text-decoration: none;
+                padding-left: 3%;
+                font-size: 4rem;
+            }
+        }
+    }
+
+    
+
+}

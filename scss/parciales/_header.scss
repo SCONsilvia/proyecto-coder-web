@@ -1,0 +1,36 @@
+.header{
+    background-color: $colorHeaderFooter;
+    
+    .header__contenedor{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 1200px;
+
+        .logo{
+            width: 100px;
+        }
+
+        .nav__lista{
+            display: flex;
+
+            .nav__item{
+                list-style: none;
+
+                transition: transform 0.5s;
+
+                &:hover{
+                    transform: scale(1.3, 1.3);
+                }
+
+                &__a{
+                    text-decoration: none;
+                    margin: 8px;
+                    font-size: 1.3rem;
+                    color: $colorPrincipal;
+                }
+            }
+        }
+    }
+}
