@@ -1,0 +1,72 @@
+/*Estilos del html contacto*/
+
+.contenidoDeContacto{
+    background-color: #FFD57E;
+    border-radius: 15px;
+    max-width: 700px;
+    padding: 2rem 3rem;
+    margin: 45px auto;
+
+    @media screen and (max-width: 346px){
+        padding: 2rem 1rem;;
+    }
+
+    p{
+        font-size: 30px;
+        font-family: 'Akaya Telivigala', cursive;
+        margin-bottom: 24px;
+    }
+
+    .elementoContacto{
+        display: flex;
+        margin-bottom: 5px;
+
+        @media screen and (max-width: 435px){
+            flex-direction: column;
+        }
+
+        label{
+            flex-basis: 165px;
+
+            @media screen and (max-width: 435px){
+                flex-basis: auto;
+            }
+        }
+
+        .areaDeTexto{
+            border: 1px solid #ced4da;
+            padding: 0.3rem 0.6rem;
+            border-radius: 0.25rem;
+            min-width: 50%;
+        }
+
+        .dejarComentario{
+            max-height: 158px;
+            flex-basis: 60%;
+        }
+        
+    }
+
+    .elementoBotones{
+        display: flex;
+        justify-content: center;
+
+        .botonForm{
+            background-color: $colorBotones;
+            color: #AC4B1C;
+            border: none;
+            margin-left: 10px;
+
+            &:hover{
+                background-color: #AC4B1C;
+                color: $colorBotones;
+            }
+
+            &:focus{
+                background-color: #AC4B1C;
+                color: $colorBotones;
+                box-shadow: 0 0 0 0.2rem $colorBotones;
+            }
+        }
+    }
+}

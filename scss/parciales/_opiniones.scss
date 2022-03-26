@@ -1,0 +1,54 @@
+/*Estilos del html opiniones*/
+.opiniones{
+    max-width: 1000px;
+    margin: 45px auto;
+    background-color:#ffeba3;
+    padding: 10px;
+    border-radius: 10px;
+
+    @media screen and (max-width: 768px){
+        /*Opiniones Bootstrap acomodando*/
+        min-height: initial;
+    }
+
+    & > p{
+        margin-left: 7%;
+        font-size: 2rem;
+
+        @media screen and (max-width: 352px){
+            font-size: 1.5rem;
+        }
+    }
+
+    h5{
+        @media screen and (max-width: 352px){
+            font-size: 1.5rem;
+        }
+    }
+
+    .persona{
+        background-color: #f19b708c;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+        padding: 10px 0px;
+
+        .col-md-4{
+            display: flex;
+            align-items: center;
+        }
+
+        .opinionCard{
+            margin: 10px auto ; 
+            border: none;
+            border-radius: 0%;
+            padding: 5px;
+            min-height: 190px;
+
+            .card-title{
+                font-size: 2rem;
+                margin-bottom: 0px;
+                text-align: left;
+            }
+        }
+    }
+}

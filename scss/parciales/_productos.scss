@@ -1,0 +1,68 @@
+/*estilos del html productos*/
+.contenidoDeCatalogo{
+    max-width: 1450px;
+
+    background-color: bisque;
+    margin: 20px auto;
+    border-radius: 40px;
+    padding-bottom: 27px;
+    padding-top: 27px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2{
+        font-size: 30px;
+        font-family: 'Akaya Telivigala', cursive;
+    }
+
+    .productosLista{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+        .productoCatalogo{
+            width: 300px;
+            margin: 10px 10px;
+            background-color:#F6CD90;
+            padding: 14px;
+            border-radius: 14px;
+
+            @media screen and (max-width: 352px){
+                width: auto;
+            }
+
+            .productoCatalogo__contenedorImg{
+                height: 260px;
+                overflow: hidden;
+                position: relative;
+
+                &__img--top{
+                    position: absolute;
+                    width: 400px;
+                    left: -53px;
+                    top: -138px;
+
+                    @media screen and (max-width: 352px){
+                        left: -20%;
+                        top: -60%;
+                    }
+                }
+                
+                &__img--bottom{
+                    position: absolute;
+                    width: 400px;
+                    left: -53px;
+                    bottom: -80px;
+                }
+
+                &__img{
+                    position: absolute;
+                    width: 400px;
+                    left: -53px;
+                }
+            }
+        }
+    }
+}
