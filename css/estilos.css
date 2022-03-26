@@ -53,6 +53,9 @@
       .header .header__contenedor .nav__lista .nav__item {
         list-style: none;
         transition: transform 0.5s; }
+        @media screen and (max-width: 806px) {
+          .header .header__contenedor .nav__lista .nav__item {
+            margin-bottom: 1.3rem; } }
         .header .header__contenedor .nav__lista .nav__item:hover {
           transform: scale(1.3, 1.3); }
           @media screen and (max-width: 806px) {
@@ -479,3 +482,32 @@ footer {
         background-color: #AC4B1C;
         color: #ffffff;
         box-shadow: 0 0 0 0.2rem #ffffff; }
+
+/*Estilos de html mas*/
+.card {
+  background-color: bisque;
+  margin: 20px auto;
+  border-radius: 40px;
+  padding: 27px; }
+
+.col-md-6 h2 {
+  text-align: center;
+  font-size: 3rem; }
+
+.card-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem; }
+
+.list-group {
+  flex-wrap: wrap; }
+
+.list-group-item {
+  flex-basis: 50%;
+  background-color: transparent;
+  border: none; }
+
+.card-body a {
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 2rem; }

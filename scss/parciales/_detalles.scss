@@ -1,0 +1,36 @@
+
+/*Estilos de html mas*/
+
+.card{
+    background-color: bisque;
+    margin: 20px auto;
+    border-radius: 40px;
+    padding: 27px;
+}
+
+.col-md-6 h2{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.card-title{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.list-group{
+    flex-wrap: wrap;
+}
+
+.list-group-item{
+    flex-basis: 50%;
+    background-color: transparent;
+    border: none;
+}
+
+.card-body a{
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
