@@ -79,9 +79,6 @@
   margin-bottom: 2rem; }
   @media screen and (max-width: 425px) {
     .inicio {
-      height: 300px; } }
-  @media screen and (max-width: 320px) {
-    .inicio {
       height: 200px; } }
   .inicio h1 {
     font-size: 5rem;
@@ -116,7 +113,7 @@ body {
       position: absolute;
       text-decoration: none;
       color: #a5480b;
-      bottom: 4px;
+      bottom: 0px;
       border: solid 3px #ffffff;
       background-color: #ffffff;
       left: 50%;
@@ -124,10 +121,21 @@ body {
       width: 115px;
       height: 56px;
       border-radius: 100px 100px 0 0; }
+      @media screen and (max-width: 373px) {
+        .productosDestacados .productoDestacado__informacion {
+          width: 107px;
+          height: 54px; } }
+      @media screen and (max-width: 344px) {
+        .productosDestacados .productoDestacado__informacion {
+          width: 93px;
+          height: 49px; } }
       .productosDestacados .productoDestacado__informacion h2 {
         position: absolute;
         bottom: 6px;
         left: 21px; }
+        @media screen and (max-width: 344px) {
+          .productosDestacados .productoDestacado__informacion h2 {
+            font-size: 1.2rem; } }
 
 .contenedorFondo {
   background-image: url(../imagenes/c1.jpg);
@@ -207,11 +215,11 @@ body {
       .sobreNosotros .informacion .contenedorBoton .botonComprar {
         position: absolute;
         text-decoration: none;
-        border: solid 3px #ffffff;
+        border: solid 0px;
         background-color: #ffffff;
         width: 157px;
         height: 76px;
-        bottom: 0px;
+        bottom: -1px;
         left: 50%;
         transform: translateX(-50%);
         border-radius: 100px 100px 0 0; }
@@ -228,30 +236,42 @@ body {
           font-weight: 600; }
 
 .masProductos {
-  margin: 0 3%;
-  margin-bottom: 6rem; }
+  margin: 0 auto;
+  margin-bottom: 6rem;
+  max-width: 1400px; }
   .masProductos div {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    justify-content: center; }
     .masProductos div .uno {
       display: flex;
       flex-direction: column;
       align-items: center;
-      position: relative; }
+      position: relative;
+      margin: 5px; }
       .masProductos div .uno .imagen {
         padding: 27px;
         padding-bottom: 3px;
         margin-bottom: 1rem;
         transition: transform 10s ease; }
+        @media screen and (max-width: 375px) {
+          .masProductos div .uno .imagen {
+            padding: 15px;
+            margin-bottom: 0rem; } }
         .masProductos div .uno .imagen :hover {
           transform: scale(1.1, 1.1); }
+          @media screen and (max-width: 806px) {
+            .masProductos div .uno .imagen :hover {
+              transform: scale(1, 1); } }
         .masProductos div .uno .imagen img {
           border: solid 0px #853a00;
           border-radius: 25px; }
       .masProductos div .uno .titulo {
         margin-bottom: 1.5rem;
         color: #ffffff; }
+        @media screen and (max-width: 375px) {
+          .masProductos div .uno .titulo {
+            margin-bottom: 1rem; } }
         .masProductos div .uno .titulo ::after {
           content: "";
           display: block;
@@ -265,6 +285,9 @@ body {
           z-index: -1; }
     .masProductos div img {
       width: 280px; }
+      @media screen and (max-width: 375px) {
+        .masProductos div img {
+          width: 200px; } }
 
 footer {
   background-color: #fdb984; }
@@ -275,6 +298,9 @@ footer {
     margin: 0 auto;
     max-width: 1200px;
     padding: 2rem 0; }
+    @media screen and (max-width: 768px) {
+      footer .footer__contenedor {
+        flex-direction: column; } }
     footer .footer__contenedor .logo {
       width: 100px; }
     footer .footer__contenedor p {
@@ -282,18 +308,39 @@ footer {
       margin-bottom: 0.5rem;
       font-size: 1.2rem;
       padding-left: 3%; }
+      @media screen and (max-width: 768px) {
+        footer .footer__contenedor p {
+          text-align: center; } }
+      @media screen and (max-width: 398px) {
+        footer .footer__contenedor p {
+          padding-left: 0;
+          font-size: 1rem; } }
     footer .footer__contenedor p:nth-child(1) {
       font-size: 1.7rem;
       padding-left: 0%; }
     footer .footer__contenedor .contactos {
       width: 381px; }
+      @media screen and (max-width: 768px) {
+        footer .footer__contenedor .contactos {
+          margin-bottom: 1rem;
+          margin-top: 1rem; } }
+      @media screen and (max-width: 398px) {
+        footer .footer__contenedor .contactos {
+          width: initial; } }
     footer .footer__contenedor .redes {
       width: 253px; }
+      @media screen and (max-width: 398px) {
+        footer .footer__contenedor .redes {
+          width: initial; } }
       footer .footer__contenedor .redes a {
         color: white;
         text-decoration: none;
         padding-left: 3%;
         font-size: 4rem; }
+        @media screen and (max-width: 398px) {
+          footer .footer__contenedor .redes a {
+            padding-left: 0%;
+            font-size: 3rem; } }
 
 /*estilos del html productos*/
 .contenidoDeCatalogo {

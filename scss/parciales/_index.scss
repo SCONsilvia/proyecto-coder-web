@@ -8,10 +8,6 @@
     margin-bottom: 2rem;
 
     @media screen and (max-width: 425px){
-        height: 300px;
-    }
-
-    @media screen and (max-width: 320px){
         height: 200px;
     }
 
@@ -58,7 +54,7 @@ body{
             position: absolute;
             text-decoration: none;
             color: #a5480b;
-            bottom: 4px;
+            bottom: 0px;
             border: solid 3px #ffffff;
             background-color: #ffffff;
             left: 50%;
@@ -66,10 +62,24 @@ body{
             width: 115px;
             height: 56px;
             border-radius: 100px 100px 0 0;
+
+            @media screen and (max-width: 373px){
+                width: 107px;
+                height: 54px;
+            }
+
+            @media screen and (max-width: 344px){
+                width: 93px;
+                height: 49px;
+            }
             h2{
                 position: absolute;
                 bottom: 6px;
                 left: 21px;
+
+                @media screen and (max-width: 344px){
+                    font-size: 1.2rem;
+                }
             }
         }
     }
@@ -179,11 +189,11 @@ body{
             .botonComprar{
                 position: absolute;
                 text-decoration: none;
-                border: solid 3px #ffffff;
+                border: solid 0px;
                 background-color: #ffffff;
                 width: 157px;
                 height: 76px;
-                bottom: 0px;
+                bottom: -1px;
                 left: 50%;
                 transform: translateX(-50%);
                 border-radius: 100px 100px 0 0;
@@ -206,20 +216,22 @@ body{
 }
 
 .masProductos{
-    margin: 0 3%;
+    margin: 0 auto;
     margin-bottom: 6rem;
+    max-width: 1400px;
     
     div{
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
+        justify-content: center;
         
-
+        
         .uno{
             display: flex;
             flex-direction: column;
             align-items: center;
             position: relative;
+            margin: 5px;
 
             .imagen{
                 padding: 27px;
@@ -227,8 +239,17 @@ body{
                 margin-bottom: 1rem;
                 transition: transform 10s ease;
 
+                @media screen and (max-width: 375px){
+                    padding: 15px;
+                    margin-bottom: 0rem;
+                }
+
                 :hover{
                     transform: scale(1.1, 1.1);
+
+                    @media screen and (max-width: 806px){
+                        transform: scale(1, 1);
+                    }
                 }
 
                 img{
@@ -241,6 +262,10 @@ body{
             .titulo{
                 margin-bottom: 1.5rem;
                 color: $letras;
+
+                @media screen and (max-width: 375px){
+                    margin-bottom: 1rem;
+                }
                 
                 ::after{
                     content: "";
@@ -253,12 +278,17 @@ body{
                     background-color: $objeto;
                     border-radius: 10px;
                     z-index: -1;
+                    
                 }
             }
         }
 
         img{
             width: 280px;
+
+            @media screen and (max-width: 375px){
+                width: 200px;
+            }
         }
 
     }
