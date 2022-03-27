@@ -1,8 +1,5 @@
-/*estilos del html productos*/
 .contenidoDeCatalogo{
     max-width: 1450px;
-
-    background-color: bisque;
     margin: 20px auto;
     border-radius: 40px;
     padding-bottom: 27px;
@@ -12,9 +9,21 @@
     flex-direction: column;
     align-items: center;
 
+    h2:nth-child(1){
+        color: #C46352;
+        font-family: 'Parisienne';
+        font-size: 4rem;
+
+        @media screen and (max-width: 352px){
+            font-size: 3rem;
+        }
+    }
+
     h2{
-        font-size: 30px;
-        font-family: 'Akaya Telivigala', cursive;
+        font-size: 1.5rem;
+        color: white;
+        text-align: center;
+        padding: 10px 0px;
     }
 
     .productosLista{
@@ -23,45 +32,64 @@
         justify-content: center;
     
         .productoCatalogo{
-            width: 300px;
+            width: 334px;
             margin: 10px 10px;
-            background-color:#F6CD90;
+            margin-bottom: 30px;
             padding: 14px;
             border-radius: 14px;
+            position: relative;
 
             @media screen and (max-width: 352px){
-                width: auto;
+                width: 250px;
+                margin-bottom: 10px;
             }
 
+
+            ::after{
+                content: "";
+                position: absolute;
+                background-color:#C46352;
+                display: block;
+                width: 100%;
+                height: 40%;
+                border-radius: 10px;
+                z-index: -1;
+                bottom: 0px;
+                left: 0px;
+            }
+
+
             .productoCatalogo__contenedorImg{
-                height: 260px;
-                overflow: hidden;
+                width: 300px;
                 position: relative;
 
-                &__img--top{
-                    position: absolute;
-                    width: 400px;
-                    left: -53px;
-                    top: -138px;
+                @media screen and (max-width: 352px){
+                    width: 210px;
+                }
 
-                    @media screen and (max-width: 352px){
-                        left: -20%;
-                        top: -60%;
-                    }
+                /*animacion de linea*/
+                &::after{
+                    content: "";
+                    position: absolute;
+                    background-color: #a74d11;
+                    z-index: 2;
+                    bottom: 0;
+                    left: 7px;
+                    width: 95%;
+                    height: 3px;
+                    transform: scaleX(0);
+                    transition: transform 0.5s;
+                }
+
+                &:hover::after{
+                    transform: scaleX(1);
                 }
                 
-                &__img--bottom{
-                    position: absolute;
-                    width: 400px;
-                    left: -53px;
-                    bottom: -80px;
-                }
-
-                &__img{
-                    position: absolute;
-                    width: 400px;
-                    left: -53px;
-                }
+                    img{
+                        width: 100%;
+                        border-radius: 10px;
+                    }
+                
             }
         }
     }

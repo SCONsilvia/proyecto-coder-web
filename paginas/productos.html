@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <!--Fuentes-->
+    <!--Fuentes de letras-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Roboto+Serif:wght@300;500;700&family=Shizuru&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Parisienne&family=Work+Sans&display=swap" rel="stylesheet">
 
     <!--Iconos-->
     <script src="https://kit.fontawesome.com/5e942a7bef.js" crossorigin="anonymous"></script>
@@ -25,14 +25,16 @@
     <header class="header">
         <div class="header__contenedor">
             <div class="logo">
-                <img src="../imagenes/00.svg" alt="logo">
+                <a href="../index.html"><img src="../imagenes/00.svg" alt="logo"></a>
             </div>
             <nav class="navegacion">
-                <ul class="nav__lista">
+                <a class="btn-open-sidebar" href="#sidebar"><i class="fas fa-bars"></i></a>
+                <ul class="nav__lista" id="sidebar">
                     <li class="nav__item"><a class="nav__item__a" href="../index.html">Inicio</a></li>
                     <li class="nav__item"><a class="nav__item__a" href="productos.html">Productos</a></li>
                     <li class="nav__item"><a class="nav__item__a" href="contacto.html">Contacto</a></li>
                     <li class="nav__item"><a class="nav__item__a" href="opiniones.html">Opiniones</a></li>
+                    <li class="nav__item nav__item--oculto"><a class="nav__item__a btn-close-sidebar" href="#">❌</a></li>
                 </ul>
             </nav>
         </div>
@@ -42,103 +44,92 @@
         <h2>Productos</h2>
         <div class="productosLista">
             <div class="productoCatalogo">
-                <a href="mas.html">
+                <a href="detalles.html">
                     <div class="productoCatalogo__contenedorImg">
-                        <img class="productoCatalogo__contenedorImg__img--top" src="../imagenes/1.jpg" alt="Pastel de limon con arandanos">
+                        <img src="../imagenes/1.jpg" alt="Pastel de limon con arandanos">
                     </div>
                 </a>
                 <h2>Pastel de limon</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo debitis nisi nulla quam, aperiam natus repellat, mollitia at repellendus ad illum blanditiis amet et rem quae beatae. Quidem, esse neque!</p>
             </div>
             <div class="productoCatalogo">
-                <a href="mas.html">
+                <a href="detalles.html">
                     <div class="productoCatalogo__contenedorImg">
-                        <img class="productoCatalogo__contenedorImg__img--top" src="../imagenes/2.jpg" alt="Pastel con decoraciones negras de 3 piso">
+                        <img src="../imagenes/2.jpg" alt="Pastel con decoraciones negras de 3 piso">
                     </div>
                 </a>
                 <h2>Pastel de boda</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo debitis nisi nulla quam, aperiam natus repellat, mollitia at repellendus ad illum blanditiis amet et rem quae beatae. Quidem, esse neque!</p>
             </div>
             <div class="productoCatalogo">
-                <a href="mas.html">
+                <a href="detalles.html">
                     <div class="productoCatalogo__contenedorImg">
-                        <img class="productoCatalogo__contenedorImg__img--top" src="../imagenes/3.jpg" alt="Rosca de marmolado">
+                        <img src="../imagenes/3.jpg" alt="Rosca de marmolado">
                     </div>
                 </a>
-                <h2>Rosca de vainilla y chocolate</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo debitis nisi nulla quam, aperiam natus repellat, mollitia at repellendus ad illum blanditiis amet et rem quae beatae. Quidem, esse neque!</p>
+                <h2>Rosca de vainilla</h2>
             </div>
             <div class="productoCatalogo">
-                <a href="mas.html">
+                <a href="detalles.html">
                     <div class="productoCatalogo__contenedorImg">
-                        <img class="productoCatalogo__contenedorImg__img" src="../imagenes/4.jpg" alt="Pastel de vainilla de dos piso con flores">
+                        <img src="../imagenes/4.jpg" alt="Pastel de vainilla de dos piso con flores">
                     </div>
                 </a>
                 <h2>Pastel de comunion</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo debitis nisi nulla quam, aperiam natus repellat, mollitia at repellendus ad illum blanditiis amet et rem quae beatae. Quidem, esse neque!</p>
             </div>
             <div class="productoCatalogo">
-                <a href="mas.html">
+                <a href="detalles.html">
                     <div class="productoCatalogo__contenedorImg">
-                        <img class="productoCatalogo__contenedorImg__img" src="../imagenes/5.jpg" alt="Trozo de pastel de chocolate con sirope por encima">
+                        <img src="../imagenes/5.jpg" alt="Trozo de pastel de chocolate con sirope por encima">
                     </div>
                 </a>
                 <h2>Pastel de chocolate</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo debitis nisi nulla quam, aperiam natus repellat, mollitia at repellendus ad illum blanditiis amet et rem quae beatae. Quidem, esse neque!</p>
             </div>
             <div class="productoCatalogo">
-                <a href="mas.html">
+                <a href="detalles.html">
                     <div class="productoCatalogo__contenedorImg">
-                        <img class="productoCatalogo__contenedorImg__img" src="../imagenes/6.jpg" alt="Pastel de miel con decoraciones de abejas">
+                        <img src="../imagenes/6.jpg" alt="Pastel de miel con decoraciones de abejas">
                     </div>
                 </a>
                 <h2>Pastel de abeja</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo debitis nisi nulla quam, aperiam natus repellat, mollitia at repellendus ad illum blanditiis amet et rem quae beatae. Quidem, esse neque!</p>
             </div>
             <div class="productoCatalogo">
-                <a href="mas.html">
+                <a href="detalles.html">
                     <div class="productoCatalogo__contenedorImg">
-                        <img class="productoCatalogo__contenedorImg__img" src="../imagenes/7.jpg" alt="Pastel hecho a base de helado de fresa">
+                        <img src="../imagenes/7.jpg" alt="Pastel hecho a base de helado de fresa">
                     </div>
                 </a>
                 <h2>Pastel de helado de fresa</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo debitis nisi nulla quam, aperiam natus repellat, mollitia at repellendus ad illum blanditiis amet et rem quae beatae. Quidem, esse neque!</p>
             </div>
             <div class="productoCatalogo">
-                <a href="mas.html">
+                <a href="detalles.html">
                     <div class="productoCatalogo__contenedorImg">
-                        <img class="productoCatalogo__contenedorImg__img--top" src="../imagenes/8.jpg" alt="Pastel de 3 piso con decoraciones de frutas y flores">
+                        <img src="../imagenes/8.jpg" alt="Pastel de 3 piso con decoraciones de frutas y flores">
                     </div>
                 </a>
                 <h2>Pastel de navidad</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo debitis nisi nulla quam, aperiam natus repellat, mollitia at repellendus ad illum blanditiis amet et rem quae beatae. Quidem, esse neque!</p>
             </div>
             <div class="productoCatalogo">
-                <a href="mas.html">
+                <a href="detalles.html">
                     <div class="productoCatalogo__contenedorImg">
-                        <img class="productoCatalogo__contenedorImg__img" src="../imagenes/9.jpg" alt="Dona comun con glaseado de fresa">
+                        <img src="../imagenes/9.jpg" alt="Dona comun con glaseado de fresa">
                     </div>
                 </a>
                 <h2>Donas rosadas</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo debitis nisi nulla quam, aperiam natus repellat, mollitia at repellendus ad illum blanditiis amet et rem quae beatae. Quidem, esse neque!</p>
             </div>
             <div class="productoCatalogo">
-                <a href="mas.html">
+                <a href="detalles.html">
                     <div class="productoCatalogo__contenedorImg">
-                        <img class="productoCatalogo__contenedorImg__img--top" src="../imagenes/19.jpg" alt="Pastel de 3 piso con decoraciones negras y una flor roja relleno de oscuridad">
+                        <img src="../imagenes/19.jpg" alt="Pastel de 3 piso con decoraciones negras y una flor roja relleno de oscuridad">
                     </div>
                 </a>
                 <h2>Pastel oscuro</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo debitis nisi nulla quam, aperiam natus repellat, mollitia at repellendus ad illum blanditiis amet et rem quae beatae. Quidem, esse neque!</p>
             </div>
             <div class="productoCatalogo">
-                <a href="mas.html">
+                <a href="detalles.html">
                     <div class="productoCatalogo__contenedorImg">
-                        <img class="productoCatalogo__contenedorImg__img--bottom" src="../imagenes/11.jpg" alt="Pastel a base de zanahoria con decoraciones de frutas y plantas">
+                        <img src="../imagenes/11.jpg" alt="Pastel a base de zanahoria con decoraciones de frutas y plantas">
                     </div>
                 </a>
                 <h2>Pastel de zanahoria</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo debitis nisi nulla quam, aperiam natus repellat, mollitia at repellendus ad illum blanditiis amet et rem quae beatae. Quidem, esse neque!</p>
             </div>
         </div>
     </section>
@@ -146,7 +137,7 @@
     <footer>
         <div class="footer__contenedor">
             <div class="logo">
-                <img src="../imagenes/00.svg" alt="logo">
+                <a href="../index.html"><img src="../imagenes/00.svg" alt="logo"></a>
             </div>
             <div class="contactos">
                 <p>Contactos</p>
