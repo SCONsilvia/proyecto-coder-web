@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <!--Fuentes-->
+    <!--Fuentes de letras-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Roboto+Serif:wght@300;500;700&family=Shizuru&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Parisienne&family=Work+Sans&display=swap" rel="stylesheet">
 
     <!--Iconos-->
     <script src="https://kit.fontawesome.com/5e942a7bef.js" crossorigin="anonymous"></script>
@@ -26,10 +26,11 @@
     <header class="header">
         <div class="header__contenedor">
             <div class="logo">
-                <img src="../imagenes/00.svg" alt="logo">
+                <a href="../index.html"><img src="../imagenes/00.svg" alt="logo"></a>
             </div>
             <nav class="navegacion">
-                <ul class="nav__lista">
+                <a class="btn-open-sidebar" href="#sidebar"><i class="fas fa-bars"></i></a>
+                <ul class="nav__lista" id="sidebar">
                     <li class="nav__item"><a class="nav__item__a" href="../index.html">Inicio</a></li>
                     <li class="nav__item"><a class="nav__item__a" href="productos.html">Productos</a></li>
                     <li class="nav__item"><a class="nav__item__a" href="contacto.html">Contacto</a></li>
@@ -51,7 +52,7 @@
                         <div class="card opinionCard">
                             <div class="card-body">
                                 <h5 class="card-title">Opinion de: <span>Juan</span></h5>
-                                <div>
+                                <div class="contenedorPuntuacion">
                                     <span class="puntuacion">
                                         <i class="fa-solid fa-star"></i>
                                     </span>
@@ -75,13 +76,13 @@
                 </div>
                 <div class="row persona">
                     <div class="col-12 col-md-4">
-                        <img src="../imagenes/38.jpg" class="card-img-top" alt="Imagen compartida por Ana">
+                        <img src="../imagenes/11.jpg" class="card-img-top" alt="Imagen compartida por Ana">
                     </div>
                     <div class="col-12 col-md-8">
                         <div class="card opinionCard">
                             <div class="card-body">
                                 <h5 class="card-title">Opinion de: <span>Ana</span></h5>
-                                <div>
+                                <div class="contenedorPuntuacion">
                                     <span class="puntuacion">
                                         <i class="fa-solid fa-star"></i>
                                     </span>
@@ -105,13 +106,13 @@
                 </div>
                 <div class="row persona">
                     <div class="col-12 col-md-4">
-                        <img src="../imagenes/11.jpg" class="card-img-top" alt="Imagen compartida por Federico">
+                        <img src="../imagenes/55.jpg" class="card-img-top" alt="Imagen compartida por Federico">
                     </div>
                     <div class="col-12 col-md-8">
                         <div class="card opinionCard">
                             <div class="card-body">
                                 <h5 class="card-title">Opinion de: <span>Federico</span></h5>
-                                <div>
+                                <div class="contenedorPuntuacion">
                                     <span class="puntuacion">
                                         <i class="fa-solid fa-star"></i>
                                     </span>
@@ -141,7 +142,7 @@
                         <div class="card opinionCard">
                             <div class="card-body">
                                 <h5 class="card-title">Opinion de: <span>Alfredo</span></h5>
-                                <div>
+                                <div class="contenedorPuntuacion">
                                     <span class="puntuacion">
                                         <i class="fa-solid fa-star"></i>
                                     </span>
@@ -170,8 +171,8 @@
                     <div class="col-12 col-md-8">
                         <div class="card opinionCard">
                             <div class="card-body">
-                                <h5 class="card-title">Opinion de: <span>Gabriela</span></h5>
-                                <div>
+                                <p class="card-title">Opinion de: <span>Gabriela</span></p>
+                                <div class="contenedorPuntuacion">
                                     <span class="puntuacion">
                                         <i class="fa-solid fa-star"></i>
                                     </span>
@@ -199,7 +200,7 @@
     <footer>
         <div class="footer__contenedor">
             <div class="logo">
-                <img src="../imagenes/00.svg" alt="logo">
+                <a href="../index.html"><img src="../imagenes/00.svg" alt="logo"></a>
             </div>
             <div class="contactos">
                 <p>Contactos</p>

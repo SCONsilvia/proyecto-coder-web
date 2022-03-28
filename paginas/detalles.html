@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <!--Fuentes-->
+    <!--Fuentes de letras-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Roboto+Serif:wght@300;500;700&family=Shizuru&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Parisienne&family=Work+Sans&display=swap" rel="stylesheet">
 
     <!--Iconos-->
     <script src="https://kit.fontawesome.com/5e942a7bef.js" crossorigin="anonymous"></script>
@@ -26,14 +26,16 @@
     <header class="header">
         <div class="header__contenedor">
             <div class="logo">
-                <img src="../imagenes/00.svg" alt="logo">
+                <a href="../index.html"><img src="../imagenes/00.svg" alt="logo"></a>
             </div>
             <nav class="navegacion">
-                <ul class="nav__lista">
+                <a class="btn-open-sidebar" href="#sidebar"><i class="fas fa-bars"></i></a>
+                <ul class="nav__lista" id="sidebar">
                     <li class="nav__item"><a class="nav__item__a" href="../index.html">Inicio</a></li>
                     <li class="nav__item"><a class="nav__item__a" href="productos.html">Productos</a></li>
                     <li class="nav__item"><a class="nav__item__a" href="contacto.html">Contacto</a></li>
                     <li class="nav__item"><a class="nav__item__a" href="opiniones.html">Opiniones</a></li>
+                    <li class="nav__item nav__item--oculto"><a class="nav__item__a btn-close-sidebar" href="#">❌</a></li>
                 </ul>
             </nav>
         </div>
@@ -43,26 +45,28 @@
         <div class="card mb-3" style="max-width: 1540px;">
             <div class="row g-0">
                 <div class="col-md-6">
-                    <h2>Titulo</h2>
-                    <img src="../imagenes/46.jpg" class="img-fluid rounded-start" alt="Descripcion de la imagen del producto seleccionado">
+                    <h2 class="tituloDetalleProducto">Pastel de Navidad</h2>
+                    <img src="../imagenes/22.jpg" class="img-fluid rounded-start" alt="Descripcion de la imagen del producto seleccionado">
                 </div>
                 <div class="col-md-6">
                     <div class="card-body">
-                        <h5 class="card-title">Subtitulo</h5>
-                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat sunt eaque perspiciatis, quisquam laboriosam eius quia suscipit alias tempore dolorum, quos molestiae illum blanditiis recusandae quo est quasi, hic vero?</p>
-                        <div class="productoDetalle__der__lista">
-                            <p>Ingredientes</p>
+                        <h5 class="card-title">Me llena de felicidad</h5>
+                        <p class="card-text">Es constumbre en ciertos lugares de mundo celebrar la navidad con este delicioso pastel. No te dejes enga;ar por su simplesa aveces lo mas simple resulta ser lo mas delicioso. dejate llevar por el espiritud navide;o y como este delicioso pastel de frutilla y crema. !Feliz navidad todo el a;o!</p>
+                        <div class="listaDeIngredientes">
+                            <p class="tituloIngredientes">Ingredientes</p>
                             <ul class="list-group list-group-horizontal-xxl">
-                                <li class="list-group-item">An item</li>
-                                <li class="list-group-item">A second item</li>
-                                <li class="list-group-item">A third item</li>
-                                <li class="list-group-item">An item</li>
-                                <li class="list-group-item">A second item</li>
-                                <li class="list-group-item">A third item</li>
-                                <li class="list-group-item">A third item</li>
+                                <li class="list-group-item">Frutillas</li>
+                                <li class="list-group-item">Nata para montar</li>
+                                <li class="list-group-item">Mantequilla</li>
+                                <li class="list-group-item">Harina</li>
+                                <li class="list-group-item">Leche</li>
+                                <li class="list-group-item">Huevo</li>
+                                <li class="list-group-item">Azucar</li>
                             </ul>
                         </div>
-                        <a href="contacto.html" class="botonCompra">Comprar con nosotros</a>
+                        <div class="contenedorBoton">
+                            <a href="contacto.html" class="botonCompra">Comprar con nosotros</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -73,7 +77,7 @@
     <footer>
         <div class="footer__contenedor">
             <div class="logo">
-                <img src="imagenes/00.svg" alt="logo">
+                <a href="../index.html"><img src="../imagenes/00.svg" alt="logo"></a>
             </div>
             <div class="contactos">
                 <p>Contactos</p>

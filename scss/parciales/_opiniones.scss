@@ -2,7 +2,6 @@
 .opiniones{
     max-width: 1000px;
     margin: 45px auto;
-    background-color:#ffeba3;
     padding: 10px;
     border-radius: 10px;
 
@@ -20,14 +19,8 @@
         }
     }
 
-    h5{
-        @media screen and (max-width: 352px){
-            font-size: 1.5rem;
-        }
-    }
-
     .persona{
-        background-color: #f19b708c;
+        background-color: #C46352;
         border-radius: 10px;
         margin-bottom: 2rem;
         padding: 10px 0px;
@@ -43,11 +36,24 @@
             border-radius: 0%;
             padding: 5px;
             min-height: 190px;
+            color: white;
 
             .card-title{
-                font-size: 2rem;
-                margin-bottom: 0px;
+                font-size: 1.7rem;
+                margin-bottom: 0.5rem;
                 text-align: left;
+
+                @media screen and (max-width: 352px){
+                    font-size: 1.5rem;
+                }
+            }
+
+            .contenedorPuntuacion{
+                margin-bottom: 0.5rem;
+
+                .puntuacion{
+                    color: yellow;
+                }
             }
         }
     }

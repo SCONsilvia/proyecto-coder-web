@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <!--Fuentes-->
+    <!--Fuentes de letras-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Roboto+Serif:wght@300;500;700&family=Shizuru&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Parisienne&family=Work+Sans&display=swap" rel="stylesheet">
 
     <!--Iconos-->
     <script src="https://kit.fontawesome.com/5e942a7bef.js" crossorigin="anonymous"></script>
@@ -25,19 +25,25 @@
     <header class="header">
         <div class="header__contenedor">
             <div class="logo">
-                <img src="../imagenes/00.svg" alt="logo">
+                <a href="../index.html"><img src="../imagenes/00.svg" alt="logo"></a>
             </div>
             <nav class="navegacion">
-                <ul class="nav__lista">
+                <a class="btn-open-sidebar" href="#sidebar"><i class="fas fa-bars"></i></a>
+                <ul class="nav__lista" id="sidebar">
                     <li class="nav__item"><a class="nav__item__a" href="../index.html">Inicio</a></li>
                     <li class="nav__item"><a class="nav__item__a" href="productos.html">Productos</a></li>
                     <li class="nav__item"><a class="nav__item__a" href="contacto.html">Contacto</a></li>
                     <li class="nav__item"><a class="nav__item__a" href="opiniones.html">Opiniones</a></li>
+                    <li class="nav__item nav__item--oculto"><a class="nav__item__a btn-close-sidebar" href="#">❌</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
+    <div class="imagendonfo">
+        <div class="contenedorfondo">
+
+        
     <div class="contenidoDeContacto">
         <p>Pongase en contacto con nosotros</p>
         <form>
@@ -45,15 +51,15 @@
                 <label for="nombre">Nombre:</label>
                 <input class="areaDeTexto" type="text" name="nombre" id="nombre">
             </div>
-
-            <div class="elementoContacto">
-                <label for="correo">Correo:</label>
-                <input class="areaDeTexto" type="email" name="correo" id="correo">
-            </div>
             
             <div class="elementoContacto">
                 <label for="numero">Numero de telefono:</label>
                 <input class="areaDeTexto" type="number" name="Numero" id="numero">
+            </div>
+
+            <div class="elementoContacto">
+                <label for="correo">Correo:</label>
+                <input class="areaDeTexto" type="email" name="correo" id="correo">
             </div>
 
             <div class="elementoContacto">
@@ -68,10 +74,13 @@
         </form>
     </div>
 
+</div>
+</div>
+
     <footer>
         <div class="footer__contenedor">
             <div class="logo">
-                <img src="../imagenes/00.svg" alt="logo">
+                <a href="../index.html"><img src="../imagenes/00.svg" alt="logo"></a>
             </div>
             <div class="contactos">
                 <p>Contactos</p>

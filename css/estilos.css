@@ -7,6 +7,7 @@
 
 body {
   background-color: #fff3ea;
+  /* #fff3ea;*/
   width: 100%; }
 
 .header {
@@ -420,7 +421,6 @@ footer {
 .opiniones {
   max-width: 1000px;
   margin: 45px auto;
-  background-color: #ffeba3;
   padding: 10px;
   border-radius: 10px; }
   @media screen and (max-width: 768px) {
@@ -433,11 +433,8 @@ footer {
     @media screen and (max-width: 352px) {
       .opiniones > p {
         font-size: 1.5rem; } }
-  @media screen and (max-width: 352px) {
-    .opiniones h5 {
-      font-size: 1.5rem; } }
   .opiniones .persona {
-    background-color: #f19b708c;
+    background-color: #C46352;
     border-radius: 10px;
     margin-bottom: 2rem;
     padding: 10px 0px; }
@@ -449,34 +446,61 @@ footer {
       border: none;
       border-radius: 0%;
       padding: 5px;
-      min-height: 190px; }
+      min-height: 190px;
+      color: white; }
       .opiniones .persona .opinionCard .card-title {
-        font-size: 2rem;
-        margin-bottom: 0px;
+        font-size: 1.7rem;
+        margin-bottom: 0.5rem;
         text-align: left; }
+        @media screen and (max-width: 352px) {
+          .opiniones .persona .opinionCard .card-title {
+            font-size: 1.5rem; } }
+      .opiniones .persona .opinionCard .contenedorPuntuacion {
+        margin-bottom: 0.5rem; }
+        .opiniones .persona .opinionCard .contenedorPuntuacion .puntuacion {
+          color: yellow; }
 
-/*Estilos del html contacto*/
-.contenidoDeContacto {
-  background-color: #FFD57E;
-  border-radius: 15px;
+.imagendonfo {
   max-width: 700px;
-  padding: 2rem 3rem;
-  margin: 45px auto; }
-  @media screen and (max-width: 346px) {
-    .contenidoDeContacto {
-      padding: 2rem 1rem; } }
+  border-radius: 15px;
+  margin: 30px auto;
+  background-image: url(../imagenes/s1.jpg);
+  background-size: 100%; }
+  @media screen and (max-width: 715px) {
+    .imagendonfo {
+      background-image: url(../imagenes/s2.jpg);
+      background-size: 100%; } }
+  @media screen and (max-width: 435px) {
+    .imagendonfo {
+      background-image: url(../imagenes/s4.jpg);
+      background-size: 100%; } }
+  @media screen and (max-width: 279px) {
+    .imagendonfo {
+      background-image: url(none);
+      background-size: 100%; } }
+  .imagendonfo .contenedorfondo {
+    background-color: #080707b8;
+    border-radius: 15px;
+    overflow: hidden; }
+
+.contenidoDeContacto {
+  max-width: 700px;
+  padding: 1.5rem 3rem;
+  margin: 30px auto; }
   .contenidoDeContacto p {
     font-size: 30px;
     font-family: 'Akaya Telivigala', cursive;
-    margin-bottom: 24px; }
+    margin-bottom: 24px;
+    color: white; }
   .contenidoDeContacto .elementoContacto {
     display: flex;
-    margin-bottom: 5px; }
+    margin-bottom: 10px; }
     @media screen and (max-width: 435px) {
       .contenidoDeContacto .elementoContacto {
         flex-direction: column; } }
     .contenidoDeContacto .elementoContacto label {
-      flex-basis: 165px; }
+      flex-basis: 165px;
+      color: white; }
       @media screen and (max-width: 435px) {
         .contenidoDeContacto .elementoContacto label {
           flex-basis: auto; } }
@@ -502,33 +526,41 @@ footer {
       .contenidoDeContacto .elementoBotones .botonForm:focus {
         background-color: #AC4B1C;
         color: #ffffff;
-        box-shadow: 0 0 0 0.2rem #ffffff; }
+        box-shadow: 0 0 0 0.2rem #853a00; }
 
-/*Estilos de html mas*/
 .card {
-  background-color: bisque;
+  background-color: transparent;
   margin: 20px auto;
   border-radius: 40px;
   padding: 27px; }
-
-.col-md-6 h2 {
-  text-align: center;
-  font-size: 3rem; }
-
-.card-title {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 2rem; }
-
-.list-group {
-  flex-wrap: wrap; }
-
-.list-group-item {
-  flex-basis: 50%;
-  background-color: transparent;
-  border: none; }
-
-.card-body a {
-  display: inline-block;
-  margin: 0 auto;
-  margin-top: 2rem; }
+  .card .tituloDetalleProducto {
+    font-family: 'Parisienne';
+    text-align: center;
+    font-size: 3rem; }
+  .card .card-body .card-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem; }
+  .card .card-body .contenedorBoton {
+    display: flex;
+    justify-content: center; }
+    .card .card-body .contenedorBoton .botonCompra {
+      text-decoration: none;
+      color: white;
+      border-radius: 5px;
+      padding: 7px;
+      background-color: #C46352;
+      width: fit-content; }
+  .card .tituloIngredientes {
+    font-size: 1.4rem; }
+  .card .list-group {
+    flex-wrap: wrap;
+    margin: 0px 30px;
+    margin-bottom: 4rem; }
+    .card .list-group .list-group-item {
+      flex-basis: 50%;
+      background-color: transparent;
+      border: none;
+      display: list-item;
+      list-style-type: disclosure-closed;
+      padding-left: 0px; }

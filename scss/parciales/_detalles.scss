@@ -1,36 +1,55 @@
-
-/*Estilos de html mas*/
-
 .card{
-    background-color: bisque;
+    background-color: transparent;
     margin: 20px auto;
     border-radius: 40px;
     padding: 27px;
-}
 
-.col-md-6 h2{
-    text-align: center;
-    font-size: 3rem;
-}
+    .tituloDetalleProducto{
+        font-family: 'Parisienne';
+        text-align: center;
+        font-size: 3rem;
+    }
 
-.card-title{
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-}
+    .card-body{
+        
+        .card-title{
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
 
-.list-group{
-    flex-wrap: wrap;
-}
+        .contenedorBoton{
+            display: flex;
+            justify-content: center;
+            .botonCompra{
+                text-decoration: none;
+                color: white;
+                border-radius: 5px;
+                padding: 7px;
+                background-color: #C46352;
+                
+                width: fit-content;
+            }
+        }
+    }
 
-.list-group-item{
-    flex-basis: 50%;
-    background-color: transparent;
-    border: none;
-}
+    .tituloIngredientes{
+        font-size: 1.4rem;
+    }
 
-.card-body a{
-    display: inline-block;
-    margin: 0 auto;
-    margin-top: 2rem;
+    .list-group{
+        flex-wrap: wrap;
+        margin: 0px 30px;
+        margin-bottom: 4rem;
+    
+        .list-group-item{
+            flex-basis: 50%;
+            background-color: transparent;
+            border: none;
+            
+            display: list-item;
+            list-style-type: disclosure-closed;
+            padding-left: 0px;
+        }
+    }
 }

@@ -1,25 +1,47 @@
-/*Estilos del html contacto*/
+.imagendonfo{
+    max-width: 700px;
+    border-radius: 15px;
+    margin: 30px auto;
+    background-image: url(../imagenes/s1.jpg);
+    background-size: 100%;
+
+    @media screen and (max-width: 715px){
+        background-image: url(../imagenes/s2.jpg);
+        background-size: 100%;
+    }
+
+    @media screen and (max-width: 435px){
+        background-image: url(../imagenes/s4.jpg);
+        background-size: 100%;
+    }
+
+    @media screen and (max-width: 279px){
+        background-image: url(none);
+        background-size: 100%;
+    }
+
+    .contenedorfondo{
+        background-color: #080707b8;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+}
 
 .contenidoDeContacto{
-    background-color: #FFD57E;
-    border-radius: 15px;
     max-width: 700px;
-    padding: 2rem 3rem;
-    margin: 45px auto;
-
-    @media screen and (max-width: 346px){
-        padding: 2rem 1rem;;
-    }
+    padding: 1.5rem 3rem;
+    margin: 30px auto;
 
     p{
         font-size: 30px;
         font-family: 'Akaya Telivigala', cursive;
         margin-bottom: 24px;
+        color: white;
     }
 
     .elementoContacto{
         display: flex;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
 
         @media screen and (max-width: 435px){
             flex-direction: column;
@@ -27,6 +49,7 @@
 
         label{
             flex-basis: 165px;
+            color: white;
 
             @media screen and (max-width: 435px){
                 flex-basis: auto;
@@ -65,7 +88,7 @@
             &:focus{
                 background-color: #AC4B1C;
                 color: $colorBotones;
-                box-shadow: 0 0 0 0.2rem $colorBotones;
+                box-shadow: 0 0 0 0.2rem #853a00;;
             }
         }
     }
