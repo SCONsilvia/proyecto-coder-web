@@ -1,5 +1,4 @@
 /* #fdb984 #C37857;*/
-/*#a5480b*/
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +27,7 @@ body {
           /* Menu lateral */
           display: inline-block;
           background-color: #C46352;
-          color: white;
+          color: #ffffff;
           font-size: 1.5rem;
           border-radius: 5px;
           padding: 0.5rem 1rem; } }
@@ -88,15 +87,15 @@ body {
   @media screen and (max-width: 425px) {
     .inicio {
       height: 200px; } }
-  .inicio h1 {
+  .inicio .tituloPrincipal {
     font-size: 5rem;
     font-family: 'Parisienne', cursive;
     color: #ffffff; }
     @media screen and (max-width: 540px) {
-      .inicio h1 {
+      .inicio .tituloPrincipal {
         font-size: 3rem; } }
     @media screen and (max-width: 320px) {
-      .inicio h1 {
+      .inicio .tituloPrincipal {
         font-size: 2.5rem; } }
 
 .productosDestacados {
@@ -111,15 +110,14 @@ body {
     margin: 10px; }
     .productosDestacados .productoDestacado .productoDestacado__ContenedorImg__img {
       width: 100%;
-      border: solid 0px #853a00;
       border-radius: 25px; }
     .productosDestacados .productoDestacado__informacion {
       position: absolute;
       text-decoration: none;
       color: #a5480b;
       bottom: 0px;
-      border: solid 3px #ffffff;
-      background-color: #ffffff;
+      border: solid 3px #fff3ea;
+      background-color: #fff3ea;
       left: 50%;
       transform: translateX(-50%);
       width: 115px;
@@ -133,12 +131,12 @@ body {
         .productosDestacados .productoDestacado__informacion {
           width: 93px;
           height: 49px; } }
-      .productosDestacados .productoDestacado__informacion h2 {
+      .productosDestacados .productoDestacado__informacion__h2 {
         position: absolute;
         bottom: 6px;
         left: 21px; }
         @media screen and (max-width: 344px) {
-          .productosDestacados .productoDestacado__informacion h2 {
+          .productosDestacados .productoDestacado__informacion__h2 {
             font-size: 1.2rem; } }
 
 .contenedorFondo {
@@ -168,7 +166,7 @@ body {
   padding-top: 40px; }
   .sobreNosotros .informacion {
     flex-basis: 60%;
-    color: white;
+    color: #ffffff;
     position: relative; }
     @media screen and (max-width: 1133px) {
       .sobreNosotros .informacion {
@@ -220,63 +218,63 @@ body {
         position: absolute;
         text-decoration: none;
         border: solid 0px;
-        background-color: #ffffff;
+        background-color: #fff3ea;
         width: 157px;
         height: 76px;
         bottom: -1px;
         left: 50%;
         transform: translateX(-50%);
         border-radius: 100px 100px 0 0; }
-        @media screen and (max-width: 353px) {
-          .sobreNosotros .informacion .contenedorBoton .botonComprar {
-            bottom: -1px; } }
         .sobreNosotros .informacion .contenedorBoton .botonComprar p {
           position: absolute;
           text-align: center;
           font-size: 1.3rem;
           top: 36px;
           left: 14px;
-          color: #a74d11;
+          color: #a5480b;
           font-weight: 600; }
 
-.masProductos {
+.contenidoDeProductos {
   margin: 0 auto;
   margin-bottom: 6rem;
   max-width: 1400px; }
-  .masProductos div {
+  .contenidoDeProductos .productosListaInicio {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
-    .masProductos div .uno {
+    .contenidoDeProductos .productosListaInicio .producto {
       display: flex;
       flex-direction: column;
       align-items: center;
       position: relative;
       margin: 5px; }
-      .masProductos div .uno .imagen {
+      .contenidoDeProductos .productosListaInicio .producto .producto__contenedorImg {
         padding: 27px;
         padding-bottom: 3px;
         margin-bottom: 1rem;
         transition: transform 10s ease; }
         @media screen and (max-width: 375px) {
-          .masProductos div .uno .imagen {
+          .contenidoDeProductos .productosListaInicio .producto .producto__contenedorImg {
             padding: 15px;
             margin-bottom: 0rem; } }
-        .masProductos div .uno .imagen :hover {
+        .contenidoDeProductos .productosListaInicio .producto .producto__contenedorImg :hover {
           transform: scale(1.1, 1.1); }
           @media screen and (max-width: 806px) {
-            .masProductos div .uno .imagen :hover {
+            .contenidoDeProductos .productosListaInicio .producto .producto__contenedorImg :hover {
               transform: scale(1, 1); } }
-        .masProductos div .uno .imagen img {
-          border: solid 0px #853a00;
-          border-radius: 25px; }
-      .masProductos div .uno .titulo {
+        .contenidoDeProductos .productosListaInicio .producto .producto__contenedorImg .producto__contenedorImg__img {
+          border-radius: 25px;
+          width: 280px; }
+          @media screen and (max-width: 375px) {
+            .contenidoDeProductos .productosListaInicio .producto .producto__contenedorImg .producto__contenedorImg__img {
+              width: 200px; } }
+      .contenidoDeProductos .productosListaInicio .producto .producto__titulo {
         margin-bottom: 1.5rem;
         color: #ffffff; }
         @media screen and (max-width: 375px) {
-          .masProductos div .uno .titulo {
+          .contenidoDeProductos .productosListaInicio .producto .producto__titulo {
             margin-bottom: 1rem; } }
-        .masProductos div .uno .titulo ::after {
+        .contenidoDeProductos .productosListaInicio .producto .producto__titulo ::after {
           content: "";
           display: block;
           position: absolute;
@@ -287,11 +285,6 @@ body {
           background-color: #C46352;
           border-radius: 10px;
           z-index: -1; }
-    .masProductos div img {
-      width: 280px; }
-      @media screen and (max-width: 375px) {
-        .masProductos div img {
-          width: 200px; } }
 
 footer {
   background-color: #fdb984; }
@@ -308,7 +301,7 @@ footer {
     footer .footer__contenedor .logo {
       width: 100px; }
     footer .footer__contenedor p {
-      color: white;
+      color: #ffffff;
       margin-bottom: 0.5rem;
       font-size: 1.2rem;
       padding-left: 3%; }
@@ -337,7 +330,7 @@ footer {
         footer .footer__contenedor .redes {
           width: initial; } }
       footer .footer__contenedor .redes a {
-        color: white;
+        color: #ffffff;
         text-decoration: none;
         padding-left: 3%;
         font-size: 4rem; }
@@ -364,7 +357,7 @@ footer {
         font-size: 3rem; } }
   .contenidoDeCatalogo h2 {
     font-size: 1.5rem;
-    color: white;
+    color: #ffffff;
     text-align: center;
     padding: 10px 0px; }
   .contenidoDeCatalogo .productosLista {
@@ -491,7 +484,7 @@ footer {
     font-size: 30px;
     font-family: 'Akaya Telivigala', cursive;
     margin-bottom: 24px;
-    color: white; }
+    color: #ffffff; }
   .contenidoDeContacto .elementoContacto {
     display: flex;
     margin-bottom: 10px; }
@@ -500,7 +493,7 @@ footer {
         flex-direction: column; } }
     .contenidoDeContacto .elementoContacto label {
       flex-basis: 165px;
-      color: white; }
+      color: #ffffff; }
       @media screen and (max-width: 435px) {
         .contenidoDeContacto .elementoContacto label {
           flex-basis: auto; } }
@@ -546,7 +539,7 @@ footer {
     justify-content: center; }
     .card .card-body .contenedorBoton .botonCompra {
       text-decoration: none;
-      color: white;
+      color: #ffffff;
       border-radius: 5px;
       padding: 7px;
       background-color: #C46352;

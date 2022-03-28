@@ -19,8 +19,8 @@
             @media screen and (max-width: 806px){
                 /* Menu lateral */
                 display: inline-block;
-                background-color: #C46352;
-                color: white;
+                background-color: $colorSecundario;
+                color: $colorDeTexto;
                 font-size: 1.5rem;
                 border-radius: 5px;
                 padding: 0.5rem 1rem;
@@ -39,7 +39,7 @@
 
             @media screen and (max-width: 806px){
                 /* Menu lateral */
-                background-color: #C46352;
+                background-color: $colorSecundario;
                 width: 80%;
                 max-width: 400px;
                 height: 100vh;
@@ -76,7 +76,7 @@
                     text-decoration: none;
                     margin: 8px;
                     font-size: 1.3rem;
-                    color: $colorPrincipal;
+                    color: $colorDeTexto;
                 }
             }
 

@@ -23,10 +23,10 @@
             justify-content: center;
             .botonCompra{
                 text-decoration: none;
-                color: white;
+                color: $colorDeTexto;
                 border-radius: 5px;
                 padding: 7px;
-                background-color: #C46352;
+                background-color: $colorSecundario;
                 
                 width: fit-content;
             }

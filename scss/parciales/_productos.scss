@@ -10,7 +10,7 @@
     align-items: center;
 
     h2:nth-child(1){
-        color: #C46352;
+        color: $colorSecundario;
         font-family: 'Parisienne';
         font-size: 4rem;
 
@@ -21,7 +21,7 @@
 
     h2{
         font-size: 1.5rem;
-        color: white;
+        color: $colorDeTexto;
         text-align: center;
         padding: 10px 0px;
     }
@@ -48,7 +48,7 @@
             ::after{
                 content: "";
                 position: absolute;
-                background-color:#C46352;
+                background-color:$colorSecundario;
                 display: block;
                 width: 100%;
                 height: 40%;

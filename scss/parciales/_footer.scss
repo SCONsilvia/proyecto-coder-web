@@ -17,7 +17,7 @@ footer{
         }
 
         p{
-            color: white;
+            color: $colorDeTexto;
             margin-bottom: 0.5rem;
             font-size: 1.2rem;
             padding-left: 3%;
@@ -56,7 +56,7 @@ footer{
                 width: initial;
             }
             a{
-                color: white;
+                color: $colorDeTexto;
                 text-decoration: none;
                 padding-left: 3%;
                 font-size: 4rem;

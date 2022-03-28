@@ -11,10 +11,10 @@
         height: 200px;
     }
 
-    h1{
+    .tituloPrincipal{
         font-size: 5rem;
         font-family: 'Parisienne', cursive;
-        color: $colorPrincipal;
+        color: $colorDeTexto;
 
         @media screen and (max-width: 540px){
             font-size: 3rem;
@@ -24,8 +24,6 @@
             font-size: 2.5rem;
         }
     }
-
-    
 }
 
 
@@ -43,17 +41,16 @@
 
         .productoDestacado__ContenedorImg__img{
             width: 100%;
-            border: solid 0px #853a00;
             border-radius: 25px;
         }
 
         &__informacion{
             position: absolute;
             text-decoration: none;
-            color: #a5480b;
+            color: $colorDeLetraDeSubtitulo;
             bottom: 0px;
-            border: solid 3px #ffffff;
-            background-color: #ffffff;
+            border: solid 3px $colorDefondo;
+            background-color: $colorDefondo;
             left: 50%;
             transform: translateX(-50%);
             width: 115px;
@@ -69,7 +66,8 @@
                 width: 93px;
                 height: 49px;
             }
-            h2{
+
+            &__h2{
                 position: absolute;
                 bottom: 6px;
                 left: 21px;
@@ -81,6 +79,7 @@
         }
     }
 }
+
 .contenedorFondo{
     background-image: url(../imagenes/c1.jpg);
     background-size: 100%;
@@ -116,7 +115,7 @@
 
     .informacion{
         flex-basis: 60%;
-        color: white;
+        color: $colorDeTexto;
         position: relative;
 
         @media screen and (max-width: 1133px){
@@ -187,7 +186,7 @@
                 position: absolute;
                 text-decoration: none;
                 border: solid 0px;
-                background-color: #ffffff;
+                background-color: $colorDefondo;
                 width: 157px;
                 height: 76px;
                 bottom: -1px;
@@ -195,16 +194,13 @@
                 transform: translateX(-50%);
                 border-radius: 100px 100px 0 0;
 
-                @media screen and (max-width: 353px){
-                    bottom: -1px;
-                }
                 p{
                     position: absolute;
                     text-align: center;
                     font-size: 1.3rem;
                     top: 36px;
                     left: 14px;
-                    color: #a74d11;
+                    color: $colorDeLetraDeSubtitulo;
                     font-weight: 600;
                 }
             }
@@ -212,25 +208,24 @@
     }
 }
 
-.masProductos{
+.contenidoDeProductos{
     margin: 0 auto;
     margin-bottom: 6rem;
     max-width: 1400px;
     
-    div{
+    .productosListaInicio{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         
-        
-        .uno{
+        .producto{
             display: flex;
             flex-direction: column;
             align-items: center;
             position: relative;
             margin: 5px;
 
-            .imagen{
+            .producto__contenedorImg{
                 padding: 27px;
                 padding-bottom: 3px;
                 margin-bottom: 1rem;
@@ -249,16 +244,19 @@
                     }
                 }
 
-                img{
-                    border: solid 0px #853a00;
+                .producto__contenedorImg__img{
                     border-radius: 25px;
+                    width: 280px;
+
+                    @media screen and (max-width: 375px){
+                        width: 200px;
+                    }
                 }
             }
-
             
-            .titulo{
+            .producto__titulo{
                 margin-bottom: 1.5rem;
-                color: $letras;
+                color: $colorDeTexto;
 
                 @media screen and (max-width: 375px){
                     margin-bottom: 1rem;
@@ -272,22 +270,11 @@
                     height: 30%;
                     bottom: 0;
                     left: 0;
-                    background-color: $objeto;
+                    background-color: $colorSecundario;
                     border-radius: 10px;
                     z-index: -1;
-                    
                 }
             }
         }
-
-        img{
-            width: 280px;
-
-            @media screen and (max-width: 375px){
-                width: 200px;
-            }
-        }
-
     }
-    
 }

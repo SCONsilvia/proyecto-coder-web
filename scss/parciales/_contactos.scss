@@ -36,7 +36,7 @@
         font-size: 30px;
         font-family: 'Akaya Telivigala', cursive;
         margin-bottom: 24px;
-        color: white;
+        color: $colorDeTexto;
     }
 
     .elementoContacto{
@@ -49,7 +49,7 @@
 
         label{
             flex-basis: 165px;
-            color: white;
+            color: $colorDeTexto;
 
             @media screen and (max-width: 435px){
                 flex-basis: auto;
@@ -75,19 +75,19 @@
         justify-content: center;
 
         .botonForm{
-            background-color: $colorBotones;
+            background-color: $colorDeTexto;
             color: #AC4B1C;
             border: none;
             margin-left: 10px;
 
             &:hover{
                 background-color: #AC4B1C;
-                color: $colorBotones;
+                color: $colorDeTexto;
             }
 
             &:focus{
                 background-color: #AC4B1C;
-                color: $colorBotones;
+                color: $colorDeTexto;
                 box-shadow: 0 0 0 0.2rem #853a00;;
             }
         }
