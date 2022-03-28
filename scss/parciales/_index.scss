@@ -1,11 +1,23 @@
+.estiloBotonCircular{
+    position: absolute;
+    text-decoration: none;
+    color: $colorDeLetraDeSubtitulo;
+    bottom: 0px;
+    border: solid 3px $colorDefondo;
+    background-color: $colorDefondo;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 115px;
+    height: 56px;
+    border-radius: 100px 100px 0 0;
+}
+
 .inicio{
     height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include declararFlex(center, center);
     
     background-color: $colorHeaderFooter;
-    margin-bottom: 2rem;
+    margin-bottom: map-get($espaciadoBoton, comun);
 
     @media screen and (max-width: 425px){
         height: 200px;
@@ -28,11 +40,10 @@
 
 
 .productosDestacados{
-    display: flex;
-    justify-content: space-between;
+    @include declararFlex(space-between, initial);
     margin: 0 auto;
     max-width: 1200px;
-    margin-bottom: 4rem;
+    margin-bottom: map-get($espaciadoBoton, grande);
 
     .productoDestacado{
         width: 300px;
@@ -44,18 +55,9 @@
             border-radius: 25px;
         }
 
-        &__informacion{
-            position: absolute;
-            text-decoration: none;
-            color: $colorDeLetraDeSubtitulo;
-            bottom: 0px;
-            border: solid 3px $colorDefondo;
-            background-color: $colorDefondo;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 115px;
-            height: 56px;
-            border-radius: 100px 100px 0 0;
+        .productoDestacado__informacion{
+            @extend .estiloBotonCircular;
+            
 
             @media screen and (max-width: 373px){
                 width: 107px;
@@ -105,11 +107,10 @@
 }
 
 .sobreNosotros{
-    display: flex;
-    justify-content: center;
+    @include declararFlex(center, initial);
     max-width: 1300px;
     margin: 0 auto;
-    margin-bottom: 2rem;
+    margin-bottom: map-get($espaciadoBoton, comun);
     padding-top: 40px;
    
 
@@ -133,12 +134,12 @@
 
             @media screen and (max-width: 472px){
                 font-size: 3rem;
-                margin-bottom: 1rem;
+                margin-bottom: map-get($espaciadoBoton, pequeno);
             }
 
             @media screen and (max-width: 353px){
                 font-size: 2.5rem;
-                margin-bottom: 1rem;
+                margin-bottom: map-get($espaciadoBoton, pequeno);
             }
         }
 
@@ -146,7 +147,7 @@
             text-align: center;
             font-size: 2rem;
             margin-left: 28%;
-            margin-bottom: 3rem;
+            margin-bottom: map-get($espaciadoBoton, noTanGrande);
 
             @media screen and (max-width: 472px){
                 display: none;
@@ -156,24 +157,24 @@
         &__parrafo2{
             text-align: center;
             font-size: 1.5rem;
-            margin-bottom: 3rem;
+            margin-bottom: map-get($espaciadoBoton, noTanGrande);
 
             @media screen and (max-width: 472px){
                 font-size: 1.2rem;
-                margin-bottom: 2rem;
+                margin-bottom: map-get($espaciadoBoton, comun);
             }
 
             @media screen and (max-width: 353px){
                 font-size: 1rem;
-                margin-bottom: 1rem;
+                margin-bottom: map-get($espaciadoBoton, pequeno);
             }
         }
 
         p:nth-child(5){
-            margin-bottom: 3rem;
+            margin-bottom: map-get($espaciadoBoton, noTanGrande);
 
             @media screen and (max-width: 353px){
-                margin-bottom: 1rem;
+                margin-bottom: map-get($espaciadoBoton, pequeno);
             }
             
         }
@@ -183,16 +184,11 @@
             height: 93px;
 
             .botonComprar{
-                position: absolute;
-                text-decoration: none;
+                @extend .estiloBotonCircular;
                 border: solid 0px;
-                background-color: $colorDefondo;
                 width: 157px;
                 height: 76px;
                 bottom: -1px;
-                left: 50%;
-                transform: translateX(-50%);
-                border-radius: 100px 100px 0 0;
 
                 p{
                     position: absolute;
@@ -214,21 +210,19 @@
     max-width: 1400px;
     
     .productosListaInicio{
-        display: flex;
+        @include declararFlex(center, initial);
         flex-wrap: wrap;
-        justify-content: center;
         
         .producto{
-            display: flex;
+            @include declararFlex(initial, center);
             flex-direction: column;
-            align-items: center;
             position: relative;
             margin: 5px;
 
             .producto__contenedorImg{
                 padding: 27px;
                 padding-bottom: 3px;
-                margin-bottom: 1rem;
+                margin-bottom: map-get($espaciadoBoton, pequeno);
                 transition: transform 10s ease;
 
                 @media screen and (max-width: 375px){
@@ -259,7 +253,7 @@
                 color: $colorDeTexto;
 
                 @media screen and (max-width: 375px){
-                    margin-bottom: 1rem;
+                    margin-bottom: map-get($espaciadoBoton, pequeno);
                 }
                 
                 ::after{

@@ -1,0 +1,12 @@
+@mixin declararFlex($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+$espaciadoBoton: (
+    pequeno: 1rem,
+    comun: 2rem,
+    noTanGrande: 3rem,
+    grande: 4rem
+);

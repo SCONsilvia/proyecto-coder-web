@@ -36,7 +36,9 @@ body {
         /* Menu lateral */
         transform: translateX(0); } }
     .header .header__contenedor .nav__lista {
-      display: flex; }
+      display: flex;
+      justify-content: initial;
+      align-items: initial; }
       @media screen and (max-width: 806px) {
         .header .header__contenedor .nav__lista {
           /* Menu lateral */
@@ -77,11 +79,24 @@ body {
             /* Menu lateral */
             display: block; } }
 
+.estiloBotonCircular, .productosDestacados .productoDestacado .productoDestacado__informacion, .sobreNosotros .informacion .contenedorBoton .botonComprar {
+  position: absolute;
+  text-decoration: none;
+  color: #a5480b;
+  bottom: 0px;
+  border: solid 3px #fff3ea;
+  background-color: #fff3ea;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 115px;
+  height: 56px;
+  border-radius: 100px 100px 0 0; }
+
 .inicio {
   height: 400px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   background-color: #fdb984;
   margin-bottom: 2rem; }
   @media screen and (max-width: 425px) {
@@ -101,6 +116,7 @@ body {
 .productosDestacados {
   display: flex;
   justify-content: space-between;
+  align-items: initial;
   margin: 0 auto;
   max-width: 1200px;
   margin-bottom: 4rem; }
@@ -111,33 +127,21 @@ body {
     .productosDestacados .productoDestacado .productoDestacado__ContenedorImg__img {
       width: 100%;
       border-radius: 25px; }
-    .productosDestacados .productoDestacado__informacion {
+    @media screen and (max-width: 373px) {
+      .productosDestacados .productoDestacado .productoDestacado__informacion {
+        width: 107px;
+        height: 54px; } }
+    @media screen and (max-width: 344px) {
+      .productosDestacados .productoDestacado .productoDestacado__informacion {
+        width: 93px;
+        height: 49px; } }
+    .productosDestacados .productoDestacado .productoDestacado__informacion__h2 {
       position: absolute;
-      text-decoration: none;
-      color: #a5480b;
-      bottom: 0px;
-      border: solid 3px #fff3ea;
-      background-color: #fff3ea;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 115px;
-      height: 56px;
-      border-radius: 100px 100px 0 0; }
-      @media screen and (max-width: 373px) {
-        .productosDestacados .productoDestacado__informacion {
-          width: 107px;
-          height: 54px; } }
+      bottom: 6px;
+      left: 21px; }
       @media screen and (max-width: 344px) {
-        .productosDestacados .productoDestacado__informacion {
-          width: 93px;
-          height: 49px; } }
-      .productosDestacados .productoDestacado__informacion__h2 {
-        position: absolute;
-        bottom: 6px;
-        left: 21px; }
-        @media screen and (max-width: 344px) {
-          .productosDestacados .productoDestacado__informacion__h2 {
-            font-size: 1.2rem; } }
+        .productosDestacados .productoDestacado .productoDestacado__informacion__h2 {
+          font-size: 1.2rem; } }
 
 .contenedorFondo {
   background-image: url(../imagenes/c1.jpg);
@@ -160,6 +164,7 @@ body {
 .sobreNosotros {
   display: flex;
   justify-content: center;
+  align-items: initial;
   max-width: 1300px;
   margin: 0 auto;
   margin-bottom: 2rem;
@@ -215,16 +220,10 @@ body {
       text-align: center;
       height: 93px; }
       .sobreNosotros .informacion .contenedorBoton .botonComprar {
-        position: absolute;
-        text-decoration: none;
         border: solid 0px;
-        background-color: #fff3ea;
         width: 157px;
         height: 76px;
-        bottom: -1px;
-        left: 50%;
-        transform: translateX(-50%);
-        border-radius: 100px 100px 0 0; }
+        bottom: -1px; }
         .sobreNosotros .informacion .contenedorBoton .botonComprar p {
           position: absolute;
           text-align: center;
@@ -240,12 +239,14 @@ body {
   max-width: 1400px; }
   .contenidoDeProductos .productosListaInicio {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center; }
+    justify-content: center;
+    align-items: initial;
+    flex-wrap: wrap; }
     .contenidoDeProductos .productosListaInicio .producto {
       display: flex;
-      flex-direction: column;
+      justify-content: initial;
       align-items: center;
+      flex-direction: column;
       position: relative;
       margin: 5px; }
       .contenidoDeProductos .productosListaInicio .producto .producto__contenedorImg {
