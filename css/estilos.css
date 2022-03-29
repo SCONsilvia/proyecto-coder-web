@@ -349,12 +349,12 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .contenidoDeCatalogo h2:nth-child(1) {
+  .contenidoDeCatalogo .tituloDePagina {
     color: #C46352;
     font-family: 'Parisienne';
     font-size: 4rem; }
     @media screen and (max-width: 352px) {
-      .contenidoDeCatalogo h2:nth-child(1) {
+      .contenidoDeCatalogo .tituloDePagina {
         font-size: 3rem; } }
   .contenidoDeCatalogo h2 {
     font-size: 1.5rem;
@@ -454,25 +454,25 @@ footer {
         .opiniones .persona .opinionCard .contenedorPuntuacion .puntuacion {
           color: yellow; }
 
-.imagendonfo {
+.imagendefondo {
   max-width: 700px;
   border-radius: 15px;
   margin: 30px auto;
   background-image: url(../imagenes/s1.jpg);
   background-size: 100%; }
   @media screen and (max-width: 715px) {
-    .imagendonfo {
+    .imagendefondo {
       background-image: url(../imagenes/s2.jpg);
       background-size: 100%; } }
   @media screen and (max-width: 435px) {
-    .imagendonfo {
+    .imagendefondo {
       background-image: url(../imagenes/s4.jpg);
       background-size: 100%; } }
   @media screen and (max-width: 279px) {
-    .imagendonfo {
+    .imagendefondo {
       background-image: url(none);
       background-size: 100%; } }
-  .imagendonfo .contenedorfondo {
+  .imagendefondo .contenedorfondo {
     background-color: #080707b8;
     border-radius: 15px;
     overflow: hidden; }
