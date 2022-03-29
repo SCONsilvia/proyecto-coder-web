@@ -1,4 +1,16 @@
-
+.estiloBotonCircular{
+    position: absolute;
+    text-decoration: none;
+    color: $colorDeLetraDeSubtitulo;
+    bottom: 0px;
+    border: solid 3px $colorDefondo;
+    background-color: $colorDefondo;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 115px;
+    height: 56px;
+    border-radius: 100px 100px 0 0;
+}
 
 .inicio{
     height: 400px;
@@ -44,17 +56,7 @@
         }
 
         .productoDestacado__informacion{
-            position: absolute;
-            text-decoration: none;
-            color: $colorDeLetraDeSubtitulo;
-            bottom: 0px;
-            border: solid 3px $colorDefondo;
-            background-color: $colorDefondo;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 115px;
-            height: 56px;
-            border-radius: 100px 100px 0 0;
+            @extend .estiloBotonCircular;
             
 
             @media screen and (max-width: 373px){
@@ -182,7 +184,7 @@
             height: 93px;
 
             .botonComprar{
-                @extend .productoDestacado__informacion;
+                @extend .estiloBotonCircular;
                 border: solid 0px;
                 width: 157px;
                 height: 76px;
