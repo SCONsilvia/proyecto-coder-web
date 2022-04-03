@@ -10,15 +10,14 @@
         min-height: initial;
     }
 
-    & > p{
-        margin-left: 7%;
-        font-size: 3rem;
-        font-family: 'Parisienne', cursive;
+    .tituloDePagina{
+        color: $colorSecundario;
+        font-family: 'Parisienne';
+        font-size: 4rem;
         text-align: center;
-        font-weight: 600;
 
         @media screen and (max-width: 352px){
-            font-size: 1.5rem;
+            font-size: 3rem;
         }
     }
 

@@ -18,5 +18,5 @@ Consta de 5 paginas:
 
 ## Sobre el Autor
 
-Soy Silvia Colmenares, tengo 22 a;os, me gusta la programacion y desarrollo web, amo el pastel de frutillas con crema, fue lo que me inspiro a crear este proyecto, ya que es complicado de conseguir en algunos lugares. 
+Soy Silvia Colmenares, tengo 22 años, me gusta la programacion y desarrollo web, amo el pastel de frutillas con crema, fue lo que me inspiro a crear este proyecto, ya que es complicado de conseguir en algunos lugares. 
 
