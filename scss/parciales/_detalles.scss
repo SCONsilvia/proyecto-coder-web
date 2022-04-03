@@ -18,38 +18,36 @@
             margin-bottom: 2rem;
         }
 
+        .tituloIngredientes{
+            font-size: 1.4rem;
+        }
+    
+        .list-group{
+            flex-wrap: wrap;
+            margin: 0px 30px;
+            margin-bottom: 4rem;
+        
+            &-item{
+                flex-basis: 50%;
+                background-color: transparent;
+                border: none;
+                
+                display: list-item;
+                list-style-type: disclosure-closed;
+                padding-left: 0px;
+            }
+        }
+
         .contenedorBoton{
-            display: flex;
-            justify-content: center;
+            @include declararFlex(center, initial);
+            
             .botonCompra{
                 text-decoration: none;
                 color: $colorDeTexto;
                 border-radius: 5px;
                 padding: 7px;
                 background-color: $colorSecundario;
-                
-                width: fit-content;
             }
-        }
-    }
-
-    .tituloIngredientes{
-        font-size: 1.4rem;
-    }
-
-    .list-group{
-        flex-wrap: wrap;
-        margin: 0px 30px;
-        margin-bottom: 4rem;
-    
-        .list-group-item{
-            flex-basis: 50%;
-            background-color: transparent;
-            border: none;
-            
-            display: list-item;
-            list-style-type: disclosure-closed;
-            padding-left: 0px;
         }
     }
 }

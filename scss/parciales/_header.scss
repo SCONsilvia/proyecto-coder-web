@@ -12,10 +12,11 @@
         }
 
         .btn-open-sidebar{
+            /* Menu lateral*/
             display: none;
 
             @media screen and (max-width: 806px){
-                /* Menu lateral */
+                /* Menu lateral*/
                 display: inline-block;
                 background-color: $colorSecundario;
                 color: $colorDeTexto;
@@ -27,7 +28,7 @@
 
         #sidebar:target {
             @media screen and (max-width: 806px){
-                /* Menu lateral */
+                /* Menu lateral*/
                 transform: translateX(0);
             }
         }
@@ -55,7 +56,6 @@
 
             .nav__item{
                 list-style: none;
-
                 transition: transform 0.5s;
 
                 @media screen and (max-width: 806px){
@@ -63,7 +63,7 @@
                 }
 
                 &:hover{
-                    transform: scale(1.3, 1.3);
+                    transform: scale(1.2, 1.2);
 
                     @media screen and (max-width: 806px){
                         transform: scale(1, 1);
@@ -76,16 +76,17 @@
                     font-size: 1.3rem;
                     color: $colorDeTexto;
                 }
-            }
 
-            .nav__item--oculto{
-                display: none;
-
-                @media screen and (max-width: 806px){
-                    /* Menu lateral */
-                    display: block;
+                &--oculto{
+                    /* Menu lateral*/
+                    display: none;
+    
+                    @media screen and (max-width: 806px){
+                        /* Menu lateral*/
+                        display: block;
+                    }
+    
                 }
-
             }
         }
     }

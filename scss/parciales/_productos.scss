@@ -5,9 +5,8 @@
     padding-bottom: 27px;
     padding-top: 27px;
 
-    display: flex;
+    @include declararFlex(initial, center);
     flex-direction: column;
-    align-items: center;
 
     .tituloDePagina{
         color: $colorSecundario;
@@ -19,17 +18,9 @@
         }
     }
 
-    h2{
-        font-size: 1.5rem;
-        color: $colorDeTexto;
-        text-align: center;
-        padding: 10px 0px;
-    }
-
     .productosLista{
-        display: flex;
+        @include declararFlex(center, initial);
         flex-wrap: wrap;
-        justify-content: center;
     
         .productoCatalogo{
             width: 334px;
@@ -59,7 +50,7 @@
             }
 
 
-            .productoCatalogo__contenedorImg{
+            &__contenedorImg{
                 width: 300px;
                 position: relative;
 
@@ -85,11 +76,18 @@
                     transform: scaleX(1);
                 }
                 
-                    img{
-                        width: 100%;
-                        border-radius: 10px;
-                    }
+                img{
+                    width: 100%;
+                    border-radius: 10px;
+                }
                 
+            }
+
+            .tituloDeProducto{
+                font-size: 1.5rem;
+                color: $colorDeTexto;
+                text-align: center;
+                padding: 10px 0px;
             }
         }
     }

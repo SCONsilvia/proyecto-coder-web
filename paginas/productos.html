@@ -18,21 +18,22 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">  
 
-    <!--Estilos-->
+    <!--hoja de estilos-->
     <link rel="stylesheet" href="../css/estilos.css">
 
-    <meta name="description" content="Somos un emprendimiento que busca ofrecer la mayor variedad de pasteles, ofreciendo sabores presentes en distintos lados del mundo.">
+    <meta name="description" content="Presenta una serie de productos bajo una misma categoria">
     <meta name="keywords" content="Gersi, pasteles, donas, tartas, tortas, pastelería, productos">
 
     <link rel="shortcut icon" href="../imagenes/00.svg">
 </head>
 <body>
+    <!--Header-->
     <header class="header">
         <div class="header__contenedor">
-            <div class="logo">
-                <a href="../index.html"><img src="../imagenes/00.svg" alt="logo"></a>
-            </div>
-            <nav class="navegacion">
+            <a class="logo" href="../index.html">
+                <img src="../imagenes/00.svg" alt="logo">
+            </a>
+            <nav class="nav">
                 <a class="btn-open-sidebar" href="#sidebar"><i class="fas fa-bars"></i></a>
                 <ul class="nav__lista" id="sidebar">
                     <li class="nav__item"><a class="nav__item__a" href="../index.html">Inicio</a></li>
@@ -45,6 +46,7 @@
         </div>
     </header>
     
+    <!--Todos los productos-->
     <section class="contenidoDeCatalogo">
         <h1 class="tituloDePagina">Productos</h1>
         <div class="productosLista">
@@ -54,7 +56,7 @@
                         <img src="../imagenes/1.jpg" alt="Pastel de limon con arandanos">
                     </div>
                 </a>
-                <h2>Pastel de limon</h2>
+                <h2 class="tituloDeProducto">Pastel de limon</h2>
             </div>
             <div class="productoCatalogo">
                 <a href="detalles.html">
@@ -62,7 +64,7 @@
                         <img src="../imagenes/2.jpg" alt="Pastel con decoraciones negras de 3 piso">
                     </div>
                 </a>
-                <h2>Pastel de boda</h2>
+                <h2 class="tituloDeProducto">Pastel de boda</h2>
             </div>
             <div class="productoCatalogo">
                 <a href="detalles.html">
@@ -70,7 +72,7 @@
                         <img src="../imagenes/3.jpg" alt="Rosca de marmolado">
                     </div>
                 </a>
-                <h2>Rosca de vainilla</h2>
+                <h2 class="tituloDeProducto">Rosca de vainilla</h2>
             </div>
             <div class="productoCatalogo">
                 <a href="detalles.html">
@@ -78,7 +80,7 @@
                         <img src="../imagenes/4.jpg" alt="Pastel de vainilla de dos piso con flores">
                     </div>
                 </a>
-                <h2>Pastel de comunion</h2>
+                <h2 class="tituloDeProducto">Pastel de comunion</h2>
             </div>
             <div class="productoCatalogo">
                 <a href="detalles.html">
@@ -86,7 +88,7 @@
                         <img src="../imagenes/5.jpg" alt="Trozo de pastel de chocolate con sirope por encima">
                     </div>
                 </a>
-                <h2>Pastel de chocolate</h2>
+                <h2 class="tituloDeProducto">Pastel de chocolate</h2>
             </div>
             <div class="productoCatalogo">
                 <a href="detalles.html">
@@ -94,7 +96,7 @@
                         <img src="../imagenes/6.jpg" alt="Pastel de miel con decoraciones de abejas">
                     </div>
                 </a>
-                <h2>Pastel de abeja</h2>
+                <h2 class="tituloDeProducto">Pastel de abeja</h2>
             </div>
             <div class="productoCatalogo">
                 <a href="detalles.html">
@@ -102,7 +104,7 @@
                         <img src="../imagenes/7.jpg" alt="Pastel hecho a base de helado de fresa">
                     </div>
                 </a>
-                <h2>Pastel de helado de fresa</h2>
+                <h2 class="tituloDeProducto">Pastel de helado de fresa</h2>
             </div>
             <div class="productoCatalogo">
                 <a href="detalles.html">
@@ -110,7 +112,7 @@
                         <img src="../imagenes/8.jpg" alt="Pastel de 3 piso con decoraciones de frutas y flores">
                     </div>
                 </a>
-                <h2>Pastel de navidad</h2>
+                <h2  class="tituloDeProducto">Pastel de navidad</h2>
             </div>
             <div class="productoCatalogo">
                 <a href="detalles.html">
@@ -118,7 +120,7 @@
                         <img src="../imagenes/9.jpg" alt="Dona comun con glaseado de fresa">
                     </div>
                 </a>
-                <h2>Donas rosadas</h2>
+                <h2  class="tituloDeProducto">Donas rosadas</h2>
             </div>
             <div class="productoCatalogo">
                 <a href="detalles.html">
@@ -126,7 +128,7 @@
                         <img src="../imagenes/19.jpg" alt="Pastel de 3 piso con decoraciones negras y una flor roja relleno de oscuridad">
                     </div>
                 </a>
-                <h2>Pastel oscuro</h2>
+                <h2  class="tituloDeProducto">Pastel oscuro</h2>
             </div>
             <div class="productoCatalogo">
                 <a href="detalles.html">
@@ -134,16 +136,17 @@
                         <img src="../imagenes/11.jpg" alt="Pastel a base de zanahoria con decoraciones de frutas y plantas">
                     </div>
                 </a>
-                <h2>Pastel de zanahoria</h2>
+                <h2  class="tituloDeProducto">Pastel de zanahoria</h2>
             </div>
         </div>
     </section>
 
-    <footer>
+    <!--footer-->
+    <footer class="footer">
         <div class="footer__contenedor">
-            <div class="logo">
-                <a href="../index.html"><img src="../imagenes/00.svg" alt="logo"></a>
-            </div>
+            <a class="logo" href="../index.html">
+                <img src="../imagenes/00.svg" alt="logo">
+            </a>
             <div class="contactos">
                 <p>Contactos</p>
                 <p>Email : emailemail@gmail.com</p>

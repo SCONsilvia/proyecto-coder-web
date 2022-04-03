@@ -17,9 +17,9 @@
     @include declararFlex(center, center);
     
     background-color: $colorHeaderFooter;
-    margin-bottom: map-get($espaciadoBoton, comun);
+    margin-bottom: map-get($espaciadoBottom, comun);
 
-    @media screen and (max-width: 425px){
+    @media screen and (max-width: 540px){
         height: 200px;
     }
 
@@ -39,26 +39,25 @@
 }
 
 
-.productosDestacados{
+.categorias{
     @include declararFlex(space-between, initial);
     margin: 0 auto;
     max-width: 1200px;
-    margin-bottom: map-get($espaciadoBoton, grande);
+    margin-bottom: map-get($espaciadoBottom, grande);
 
-    .productoDestacado{
+    .categoria{
         width: 300px;
         position: relative;
         margin: 10px;
 
-        .productoDestacado__ContenedorImg__img{
+        &__ContenedorImg__img{
             width: 100%;
             border-radius: 25px;
         }
 
-        .productoDestacado__informacion{
+        &__informacion{
             @extend .estiloBotonCircular;
             
-
             @media screen and (max-width: 373px){
                 width: 107px;
                 height: 54px;
@@ -88,20 +87,17 @@
 
     @media screen and (max-width: 1024px){
         background-image: url(../imagenes/c13.jpg);
-        background-size: 100%;
     }
 
     @media screen and (max-width: 768px){
         background-image: url(../imagenes/c12.jpg);
-        background-size: 100%;
     }
 
     @media screen and (max-width: 574px){
         background-image: url(../imagenes/c15.jpg);
-        background-size: 100%;
     }
-
-    .contenedorFondo_color{
+    
+    &__color{
         background: #080707b8;
     }
 }
@@ -110,10 +106,9 @@
     @include declararFlex(center, initial);
     max-width: 1300px;
     margin: 0 auto;
-    margin-bottom: map-get($espaciadoBoton, comun);
+    margin-bottom: map-get($espaciadoBottom, comun);
     padding-top: 40px;
    
-
     .informacion{
         flex-basis: 60%;
         color: $colorDeTexto;
@@ -134,69 +129,55 @@
 
             @media screen and (max-width: 472px){
                 font-size: 3rem;
-                margin-bottom: map-get($espaciadoBoton, pequeno);
+                margin-bottom: map-get($espaciadoBottom, pequeno);
             }
 
             @media screen and (max-width: 353px){
                 font-size: 2.5rem;
-                margin-bottom: map-get($espaciadoBoton, pequeno);
             }
         }
 
-        &__parrafo{
+        &__subtitulo{
             text-align: center;
             font-size: 2rem;
             margin-left: 28%;
-            margin-bottom: map-get($espaciadoBoton, noTanGrande);
+            margin-bottom: map-get($espaciadoBottom, noTanGrande);
 
             @media screen and (max-width: 472px){
                 display: none;
             }
         }
 
-        &__parrafo2{
+        &__parrafo{
             text-align: center;
             font-size: 1.5rem;
-            margin-bottom: map-get($espaciadoBoton, noTanGrande);
+            margin-bottom: map-get($espaciadoBottom, noTanGrande);
 
             @media screen and (max-width: 472px){
                 font-size: 1.2rem;
-                margin-bottom: map-get($espaciadoBoton, comun);
+                margin-bottom: map-get($espaciadoBottom, comun);
             }
 
             @media screen and (max-width: 353px){
                 font-size: 1rem;
-                margin-bottom: map-get($espaciadoBoton, pequeno);
+                margin-bottom: map-get($espaciadoBottom, pequeno);
             }
-        }
-
-        p:nth-child(5){
-            margin-bottom: map-get($espaciadoBoton, noTanGrande);
-
-            @media screen and (max-width: 353px){
-                margin-bottom: map-get($espaciadoBoton, pequeno);
-            }
-            
         }
 
         .contenedorBoton{
-            text-align: center;
             height: 93px;
 
             .botonComprar{
                 @extend .estiloBotonCircular;
-                border: solid 0px;
-                width: 157px;
+                width: 153px;
                 height: 76px;
                 bottom: -1px;
 
                 p{
                     position: absolute;
-                    text-align: center;
                     font-size: 1.3rem;
                     top: 36px;
                     left: 14px;
-                    color: $colorDeLetraDeSubtitulo;
                     font-weight: 600;
                 }
             }
@@ -204,7 +185,7 @@
     }
 }
 
-.contenidoDeProductos{
+.contenedorDeProductos{
     margin: 0 auto;
     margin-bottom: 6rem;
     max-width: 1400px;
@@ -219,11 +200,10 @@
             position: relative;
             margin: 5px;
 
-            .producto__contenedorImg{
+            &__contenedorImg{
                 padding: 27px;
                 padding-bottom: 3px;
-                margin-bottom: map-get($espaciadoBoton, pequeno);
-                transition: transform 10s ease;
+                margin-bottom: map-get($espaciadoBottom, pequeno);
 
                 @media screen and (max-width: 375px){
                     padding: 15px;
@@ -232,13 +212,14 @@
 
                 :hover{
                     transform: scale(1.1, 1.1);
+                    transition: transform 0.5s ease;
 
                     @media screen and (max-width: 806px){
                         transform: scale(1, 1);
                     }
                 }
 
-                .producto__contenedorImg__img{
+                &__img{
                     border-radius: 25px;
                     width: 280px;
 
@@ -248,12 +229,12 @@
                 }
             }
             
-            .producto__titulo{
+            &__titulo{
                 margin-bottom: 1.5rem;
                 color: $colorDeTexto;
 
                 @media screen and (max-width: 375px){
-                    margin-bottom: map-get($espaciadoBoton, pequeno);
+                    margin-bottom: map-get($espaciadoBottom, pequeno);
                 }
                 
                 ::after{

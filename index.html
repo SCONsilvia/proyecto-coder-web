@@ -17,6 +17,7 @@
     <!--Iconos-->
     <script src="https://kit.fontawesome.com/5e942a7bef.js" crossorigin="anonymous"></script>
 
+    <!--Hoja de estilo-->
     <link rel="stylesheet" href="css/estilos.css">
 
     <meta name="description" content="Somos un emprendimiento que busca ofrecer la mayor variedad de pasteles, ofreciendo sabores presentes en distintos lados del mundo.">
@@ -25,12 +26,13 @@
     <link rel="shortcut icon" href="imagenes/00.svg">
 </head>
 <body>
+    <!--Header-->
     <header class="header">
         <div class="header__contenedor">
-            <div class="logo">
-                <a href="index.html"><img src="imagenes/00.svg" alt="logo"></a>
-            </div>
-            <nav class="navegacion">
+                <a class="logo" href="index.html">
+                    <img src="imagenes/00.svg" alt="logo">
+                </a>
+            <nav class="nav">
                 <a class="btn-open-sidebar" href="#sidebar"><i class="fas fa-bars"></i></a>
                 <ul class="nav__lista" id="sidebar">
                     <li class="nav__item"><a class="nav__item__a" href="index.html">Inicio</a></li>
@@ -44,46 +46,49 @@
     </header>
 
     <main>
+        <!--seccion de titulo-->
         <section class="inicio">
             <h1 class="tituloPrincipal">Pastelería Gersi</h1>
         </section>
         
-        <section class="productosDestacados">
-            <a href="paginas/productos.html" class="productoDestacado" data-aos="fade-down" data-aos-duration="1500">
-                <div class="productoDestacado__ContenedorImg">
-                    <img class="productoDestacado__ContenedorImg__img" src="imagenes/16.jpg" alt="Imagen de Donas">
+        <!--seccion de categorias-->
+        <section class="categorias">
+            <a href="paginas/productos.html" class="categoria" data-aos="fade-down" data-aos-duration="1500">
+                <div class="categoria__ContenedorImg">
+                    <img class="categoria__ContenedorImg__img" src="imagenes/16.jpg" alt="Imagen de Donas">
                 </div>
-                <div class="productoDestacado__informacion">
-                    <h2 class="productoDestacado__informacion__h2">Donas</h2>
-                </div>
-            </a>
-            <a href="paginas/productos.html" class="productoDestacado" data-aos="fade-down" data-aos-duration="1300">
-                <div class="productoDestacado__ContenedorImg">
-                    <img class="productoDestacado__ContenedorImg__img"src="imagenes/21.jpg" alt="Imagen de una tarta">
-                </div>
-                <div class="productoDestacado__informacion">
-                    <h2 class="productoDestacado__informacion__h2">Tartas</h2>
+                <div class="categoria__informacion">
+                    <h2 class="categoria__informacion__h2">Donas</h2>
                 </div>
             </a>
-            <a href="paginas/productos.html" class="productoDestacado" data-aos="fade-down" data-aos-duration="1100">
-                <div class="productoDestacado__ContenedorImg">
-                    <img class="productoDestacado__ContenedorImg__img"src="imagenes/18.jpg" alt="Imagen de una torta">
+            <a href="paginas/productos.html" class="categoria" data-aos="fade-down" data-aos-duration="1300">
+                <div class="categoria__ContenedorImg">
+                    <img class="categoria__ContenedorImg__img"src="imagenes/21.jpg" alt="Imagen de una tarta">
                 </div>
-                <div href="#" class="productoDestacado__informacion">
-                    <h2 class="productoDestacado__informacion__h2">Tortas</h2>
+                <div class="categoria__informacion">
+                    <h2 class="categoria__informacion__h2">Tartas</h2>
+                </div>
+            </a>
+            <a href="paginas/productos.html" class="categoria" data-aos="fade-down" data-aos-duration="1100">
+                <div class="categoria__ContenedorImg">
+                    <img class="categoria__ContenedorImg__img"src="imagenes/18.jpg" alt="Imagen de una torta">
+                </div>
+                <div class="categoria__informacion">
+                    <h2 class="categoria__informacion__h2">Tortas</h2>
                 </div>
             </a>
         </section>
-        
+
+        <!--seccion de sobre nosotros-->
         <section class="contenedorFondo">
-            <div class="contenedorFondo_color">
+            <div class="contenedorFondo__color">
                 <div class="sobreNosotros">
                     <div class="informacion">
                         <h1 class="informacion__titulo">Pastelería Gersi</h1>
-                        <p class="informacion__parrafo">Sobre nosotros</p>
-                        <p class="informacion__parrafo2">Somos una Pastelería que le gusta hacer cosas deliciosamente exquisitas.</p>
-                        <p class="informacion__parrafo2">Queremos ofrecer una variedad de productos que deleiten a todos los paladares del mundo, ofreciendo aquellos postres emblemáticos y famosos que han cautivado a las distintas culturas presentes a lo largo del planeta</p>
-                        <p class="informacion__parrafo2">Te apetece un pastel de fresa navide;o, un Cheescake Newyorkino o tal vez una Chocotorta Argentina, todo eso y más podrás conseguirlo aquí y si no lo tenemos te lo hacemos.</p>
+                        <p class="informacion__subtitulo">Sobre nosotros</p>
+                        <p class="informacion__parrafo">Somos una Pastelería que le gusta hacer cosas deliciosamente exquisitas.</p>
+                        <p class="informacion__parrafo">Queremos ofrecer una variedad de productos que deleiten a todos los paladares del mundo, ofreciendo aquellos postres emblemáticos y famosos que han cautivado a las distintas culturas presentes a lo largo del planeta</p>
+                        <p class="informacion__parrafo">Te apetece un pastel de fresa navide;o, un Cheescake Newyorkino o tal vez una Chocotorta Argentina, todo eso y más podrás conseguirlo aquí y si no lo tenemos te lo hacemos.</p>
                         <div class="contenedorBoton">
                             <a href="paginas/contacto.html" class="botonComprar"><p>contáctanos</p></a>
                         </div>
@@ -92,7 +97,8 @@
             </div>
         </section>
 
-        <section class="contenidoDeProductos">
+        <!--seccion de algunos productos-->
+        <section class="contenedorDeProductos">
             <div class="productosListaInicio">
                 <div class="producto" data-aos="flip-left">
                     <a href="paginas/detalles.html" class="producto__contenedorImg">
@@ -130,17 +136,20 @@
         </section>
     </main>
 
-    <footer>
+    <!--Footer-->
+    <footer class="footer">
         <div class="footer__contenedor">
-            <div class="logo">
-                <a href="index.html"><img src="imagenes/00.svg" alt="logo"></a>
-            </div>
+            <a class="logo" href="index.html">
+                <img src="imagenes/00.svg" alt="logo">
+            </a>
+            
             <div class="contactos">
                 <p>Contactos</p>
                 <p>Email : emailemail@gmail.com</p>
                 <p>Número de teléfono : 0000-000-00-00</p>
                 <p>Número de teléfono : 0000-000-00-00</p>
             </div>
+            
             <div class="redes">
                 <p>Redes sociales</p>
                 <a href="#">
