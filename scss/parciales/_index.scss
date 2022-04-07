@@ -23,6 +23,10 @@
         height: 200px;
     }
 
+    @media (orientation: landscape) {
+        height: 150px;
+    }
+
     .tituloPrincipal{
         font-size: 5rem;
         font-family: 'Parisienne', cursive;

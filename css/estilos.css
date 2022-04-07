@@ -102,6 +102,9 @@ body {
   @media screen and (max-width: 540px) {
     .inicio {
       height: 200px; } }
+  @media (orientation: landscape) {
+    .inicio {
+      height: 150px; } }
   .inicio .tituloPrincipal {
     font-size: 5rem;
     font-family: 'Parisienne', cursive;
