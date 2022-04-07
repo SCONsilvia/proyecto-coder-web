@@ -400,6 +400,9 @@ body {
           transition: transform 0.5s; }
         .contenidoDeCatalogo .productosLista .productoCatalogo__contenedorImg:hover::after {
           transform: scaleX(1); }
+        @media screen and (max-width: 806px) {
+          .contenidoDeCatalogo .productosLista .productoCatalogo__contenedorImg:hover::after {
+            transform: scaleX(0); } }
         .contenidoDeCatalogo .productosLista .productoCatalogo__contenedorImg img {
           width: 100%;
           border-radius: 10px; }
