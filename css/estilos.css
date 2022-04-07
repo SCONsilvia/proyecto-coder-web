@@ -108,7 +108,7 @@ body {
   @media screen and (max-width: 540px) {
     .inicio {
       height: 200px; } }
-  @media (orientation: landscape) {
+  @media screen and (max-height: 550px) {
     .inicio {
       height: 150px; } }
   .inicio .tituloPrincipal {
@@ -551,4 +551,5 @@ body {
       color: #ffffff;
       border-radius: 5px;
       padding: 7px;
-      background-color: #C46352; }
+      background-color: #C46352;
+      text-align: center; }
