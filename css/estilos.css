@@ -61,6 +61,9 @@ body {
         @media screen and (max-width: 806px) {
           .header .header__contenedor .nav__lista .nav__item {
             margin-bottom: 1.3rem; } }
+        @media (orientation: landscape) {
+          .header .header__contenedor .nav__lista .nav__item {
+            margin-bottom: 0.8rem; } }
         .header .header__contenedor .nav__lista .nav__item:hover {
           transform: scale(1.2, 1.2); }
           @media screen and (max-width: 806px) {
@@ -71,6 +74,9 @@ body {
           margin: 8px;
           font-size: 1.3rem;
           color: #ffffff; }
+          @media (orientation: landscape) {
+            .header .header__contenedor .nav__lista .nav__item__a {
+              font-size: 1.2rem; } }
         .header .header__contenedor .nav__lista .nav__item--oculto {
           /* Menu lateral*/
           display: none; }
